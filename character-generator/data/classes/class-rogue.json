@@ -1,0 +1,957 @@
+{
+  "class": [
+    {
+      "name": "Rogue",
+      "source": "XPHB",
+      "srd52": true,
+      "basicRules2024": true,
+      "primaryAbility": [
+        {
+          "dex": true
+        }
+      ],
+      "hd": {
+        "number": 1,
+        "faces": 8
+      },
+      "proficiency": [
+        "dex",
+        "int"
+      ],
+      "featProgression": [
+        {
+          "name": "Epic Boon",
+          "category": [
+            "EB"
+          ],
+          "progression": {
+            "19": 1
+          }
+        }
+      ],
+      "startingProficiencies": {
+        "armor": [
+          "light"
+        ],
+        "weapons": [
+          "simple",
+          "Martial weapons that have the {@filter Finesse or Light|items|type=martial weapon|property=finesse;light} property"
+        ],
+        "weaponProficiencies": [
+          {
+            "simple": true,
+            "all": {
+              "fromFilter": "type=martial weapon|property=light;finesse"
+            }
+          }
+        ],
+        "tools": [
+          "{@item Thieves' Tools|XPHB}"
+        ],
+        "toolProficiencies": [
+          {
+            "thieves' tools": true
+          }
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "acrobatics",
+                "athletics",
+                "deception",
+                "insight",
+                "intimidation",
+                "investigation",
+                "perception",
+                "persuasion",
+                "sleight of hand",
+                "stealth"
+              ],
+              "count": 4
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "defaultData": [
+          {
+            "A": [
+              {
+                "item": "leather armor|xphb"
+              },
+              {
+                "item": "dagger|xphb",
+                "quantity": 2
+              },
+              {
+                "item": "shortsword|xphb"
+              },
+              {
+                "item": "shortbow|xphb"
+              },
+              {
+                "item": "arrows (20)|xphb"
+              },
+              {
+                "item": "quiver|xphb"
+              },
+              {
+                "item": "thieves' tools|xphb"
+              },
+              {
+                "item": "burglar's pack|xphb"
+              },
+              {
+                "value": 800
+              }
+            ],
+            "B": [
+              {
+                "value": 10000
+              }
+            ]
+          }
+        ],
+        "entries": [
+          "{@i Choose A or B:} (A) {@item Leather Armor|XPHB}, 2 {@item Dagger|XPHB|Daggers}, {@item Shortsword|XPHB}, {@item Shortbow|XPHB}, {@item Arrows (20)|XPHB|20 Arrows}, {@item Quiver|XPHB}, {@item Thieves' Tools|XPHB}, {@item Burglar's Pack|XPHB}, and 8 GP; or (B) 100 GP"
+        ]
+      },
+      "multiclassing": {
+        "proficienciesGained": {
+          "armor": [
+            "light"
+          ],
+          "tools": [
+            "{@item Thieves' Tools|XPHB}"
+          ],
+          "toolProficiencies": [
+            {
+              "thieves' tools": true
+            }
+          ],
+          "skills": [
+            {
+              "choose": {
+                "from": [
+                  "acrobatics",
+                  "athletics",
+                  "deception",
+                  "insight",
+                  "intimidation",
+                  "investigation",
+                  "perception",
+                  "persuasion",
+                  "sleight of hand",
+                  "stealth"
+                ],
+                "count": 1
+              }
+            }
+          ]
+        }
+      },
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "Sneak Attack"
+          ],
+          "rows": [
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 1,
+                    "faces": 6
+                  }
+                ],
+                "rollable": true
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 1,
+                    "faces": 6
+                  }
+                ],
+                "rollable": true
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 2,
+                    "faces": 6
+                  }
+                ],
+                "rollable": true
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 2,
+                    "faces": 6
+                  }
+                ],
+                "rollable": true
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 3,
+                    "faces": 6
+                  }
+                ],
+                "rollable": true
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 3,
+                    "faces": 6
+                  }
+                ],
+                "rollable": true
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 4,
+                    "faces": 6
+                  }
+                ],
+                "rollable": true
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 4,
+                    "faces": 6
+                  }
+                ],
+                "rollable": true
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 5,
+                    "faces": 6
+                  }
+                ],
+                "rollable": true
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 5,
+                    "faces": 6
+                  }
+                ],
+                "rollable": true
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 6,
+                    "faces": 6
+                  }
+                ],
+                "rollable": true
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 6,
+                    "faces": 6
+                  }
+                ],
+                "rollable": true
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 7,
+                    "faces": 6
+                  }
+                ],
+                "rollable": true
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 7,
+                    "faces": 6
+                  }
+                ],
+                "rollable": true
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 8,
+                    "faces": 6
+                  }
+                ],
+                "rollable": true
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 8,
+                    "faces": 6
+                  }
+                ],
+                "rollable": true
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 9,
+                    "faces": 6
+                  }
+                ],
+                "rollable": true
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 9,
+                    "faces": 6
+                  }
+                ],
+                "rollable": true
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 10,
+                    "faces": 6
+                  }
+                ],
+                "rollable": true
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 10,
+                    "faces": 6
+                  }
+                ],
+                "rollable": true
+              }
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "Expertise|Rogue|XPHB|1",
+        "Sneak Attack|Rogue|XPHB|1",
+        "Thieves' Cant|Rogue|XPHB|1",
+        "Weapon Mastery|Rogue|XPHB|1",
+        "Cunning Action|Rogue|XPHB|2",
+        {
+          "classFeature": "Rogue Subclass|Rogue|XPHB|3",
+          "gainSubclassFeature": true
+        },
+        "Steady Aim|Rogue|XPHB|3",
+        "Ability Score Improvement|Rogue|XPHB|4",
+        "Cunning Strike|Rogue|XPHB|5",
+        "Uncanny Dodge|Rogue|XPHB|5",
+        "Expertise|Rogue|XPHB|6",
+        "Evasion|Rogue|XPHB|7",
+        "Reliable Talent|Rogue|XPHB|7",
+        "Ability Score Improvement|Rogue|XPHB|8",
+        {
+          "classFeature": "Subclass Feature|Rogue|XPHB|9",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Rogue|XPHB|10",
+        "Improved Cunning Strike|Rogue|XPHB|11",
+        "Ability Score Improvement|Rogue|XPHB|12",
+        {
+          "classFeature": "Subclass Feature|Rogue|XPHB|13",
+          "gainSubclassFeature": true
+        },
+        "Devious Strikes|Rogue|XPHB|14",
+        "Slippery Mind|Rogue|XPHB|15",
+        "Ability Score Improvement|Rogue|XPHB|16",
+        {
+          "classFeature": "Subclass Feature|Rogue|XPHB|17",
+          "gainSubclassFeature": true
+        },
+        "Elusive|Rogue|XPHB|18",
+        "Epic Boon|Rogue|XPHB|19",
+        "Stroke of Luck|Rogue|XPHB|20"
+      ],
+      "subclassTitle": "Rogue Subclass"
+    }
+  ],
+  "subclass": [
+    {
+      "name": "Arcane Trickster",
+      "shortName": "Arcane Trickster",
+      "source": "XPHB",
+      "className": "Rogue",
+      "classSource": "XPHB",
+      "spellcastingAbility": "int",
+      "casterProgression": "1/3",
+      "preparedSpellsProgression": [
+        0,
+        0,
+        3,
+        4,
+        4,
+        4,
+        5,
+        6,
+        6,
+        7,
+        8,
+        8,
+        9,
+        10,
+        10,
+        11,
+        11,
+        11,
+        12,
+        13
+      ],
+      "preparedSpellsChange": "level",
+      "cantripProgression": [
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "additionalSpells": [
+        {
+          "known": {
+            "3": [
+              "mage hand|xphb#c"
+            ]
+          },
+          "expanded": {
+            "3": [
+              {
+                "all": "level=0|class=Wizard"
+              },
+              {
+                "all": "level=1|class=Wizard"
+              }
+            ],
+            "7": [
+              {
+                "all": "level=2|class=Wizard"
+              }
+            ],
+            "13": [
+              {
+                "all": "level=3|class=Wizard"
+              }
+            ],
+            "19": [
+              {
+                "all": "level=4|class=Wizard"
+              }
+            ]
+          }
+        }
+      ],
+      "subclassTableGroups": [
+        {
+          "subclasses": [
+            {
+              "name": "Arcane Trickster",
+              "source": "XPHB"
+            }
+          ],
+          "colLabels": [
+            "{@filter Prepared Spells|spells|subclass=Rogue: Arcane Trickster}"
+          ],
+          "rows": [
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              8
+            ],
+            [
+              9
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              11
+            ],
+            [
+              11
+            ],
+            [
+              11
+            ],
+            [
+              12
+            ],
+            [
+              13
+            ]
+          ]
+        },
+        {
+          "title": "Spell Slots per Spell Level",
+          "subclasses": [
+            {
+              "name": "Arcane Trickster",
+              "source": "XPHB"
+            }
+          ],
+          "colLabels": [
+            "{@filter 1st|spells|level=1|subclass=Rogue: Arcane Trickster}",
+            "{@filter 2nd|spells|level=2|subclass=Rogue: Arcane Trickster}",
+            "{@filter 3rd|spells|level=3|subclass=Rogue: Arcane Trickster}",
+            "{@filter 4th|spells|level=4|subclass=Rogue: Arcane Trickster}"
+          ],
+          "rowsSpellProgression": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              2,
+              0
+            ],
+            [
+              4,
+              3,
+              2,
+              0
+            ],
+            [
+              4,
+              3,
+              2,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              1
+            ]
+          ]
+        }
+      ],
+      "subclassFeatures": [
+        "Arcane Trickster|Rogue|XPHB|Arcane Trickster|XPHB|3",
+        "Magical Ambush|Rogue|XPHB|Arcane Trickster|XPHB|9",
+        "Versatile Trickster|Rogue|XPHB|Arcane Trickster|XPHB|13",
+        "Spell Thief|Rogue|XPHB|Arcane Trickster|XPHB|17"
+      ]
+    },
+    {
+      "name": "Assassin",
+      "shortName": "Assassin",
+      "source": "XPHB",
+      "className": "Rogue",
+      "classSource": "XPHB",
+      "subclassFeatures": [
+        "Assassin|Rogue|XPHB|Assassin|XPHB|3",
+        "Infiltration Expertise|Rogue|XPHB|Assassin|XPHB|9",
+        "Envenom Weapons|Rogue|XPHB|Assassin|XPHB|13",
+        "Death Strike|Rogue|XPHB|Assassin|XPHB|17"
+      ]
+    },
+    {
+      "name": "Thief",
+      "shortName": "Thief",
+      "source": "XPHB",
+      "className": "Rogue",
+      "classSource": "XPHB",
+      "srd52": true,
+      "basicRules2024": true,
+      "subclassFeatures": [
+        "Thief|Rogue|XPHB|Thief|XPHB|3",
+        "Supreme Sneak|Rogue|XPHB|Thief|XPHB|9",
+        "Use Magic Device|Rogue|XPHB|Thief|XPHB|13",
+        "Thief's Reflexes|Rogue|XPHB|Thief|XPHB|17"
+      ]
+    },
+    {
+      "name": "Inquisitive",
+      "shortName": "Inquisitive",
+      "source": "XGE",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Inquisitive|Rogue||Inquisitive|XGE|3",
+        "Steady Eye|Rogue||Inquisitive|XGE|9",
+        "Unerring Eye|Rogue||Inquisitive|XGE|13",
+        "Eye for Weakness|Rogue||Inquisitive|XGE|17"
+      ]
+    },
+    {
+      "name": "Mastermind",
+      "shortName": "Mastermind",
+      "source": "XGE",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Mastermind|Rogue||Mastermind|XGE|3",
+        "Insightful Manipulator|Rogue||Mastermind|XGE|9",
+        "Misdirection|Rogue||Mastermind|XGE|13",
+        "Soul of Deceit|Rogue||Mastermind|XGE|17"
+      ]
+    },
+    {
+      "name": "Scout",
+      "shortName": "Scout",
+      "source": "XGE",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Scout|Rogue||Scout|XGE|3",
+        "Superior Mobility|Rogue||Scout|XGE|9",
+        "Ambush Master|Rogue||Scout|XGE|13",
+        "Sudden Strike|Rogue||Scout|XGE|17"
+      ]
+    },
+    {
+      "name": "Swashbuckler",
+      "shortName": "Swashbuckler",
+      "source": "XGE",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Swashbuckler|Rogue||Swashbuckler|XGE|3",
+        "Panache|Rogue||Swashbuckler|XGE|9",
+        "Elegant Maneuver|Rogue||Swashbuckler|XGE|13",
+        "Master Duelist|Rogue||Swashbuckler|XGE|17"
+      ]
+    },
+    {
+      "name": "Phantom",
+      "shortName": "Phantom",
+      "source": "TCE",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Phantom|Rogue||Phantom|TCE|3",
+        "Tokens of the Departed|Rogue||Phantom|TCE|9",
+        "Ghost Walk|Rogue||Phantom|TCE|13",
+        "Death's Friend|Rogue||Phantom|TCE|17"
+      ]
+    },
+    {
+      "name": "Soulknife",
+      "shortName": "Soulknife",
+      "source": "XPHB",
+      "className": "Rogue",
+      "classSource": "XPHB",
+      "subclassTableGroups": [
+        {
+          "subclasses": [
+            {
+              "name": "Soulknife",
+              "source": "XPHB"
+            }
+          ],
+          "colLabels": [
+            "{@tip Die Size|Soulknife Energy Die Size}",
+            "{@tip Number|Soulknife Energy Die Number}"
+          ],
+          "rows": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              "{@dice D6}",
+              4
+            ],
+            [
+              "{@dice D6}",
+              4
+            ],
+            [
+              "{@dice D8}",
+              6
+            ],
+            [
+              "{@dice D8}",
+              6
+            ],
+            [
+              "{@dice D8}",
+              6
+            ],
+            [
+              "{@dice D8}",
+              6
+            ],
+            [
+              "{@dice D8}",
+              8
+            ],
+            [
+              "{@dice D8}",
+              8
+            ],
+            [
+              "{@dice D10}",
+              8
+            ],
+            [
+              "{@dice D10}",
+              8
+            ],
+            [
+              "{@dice D10}",
+              10
+            ],
+            [
+              "{@dice D10}",
+              10
+            ],
+            [
+              "{@dice D10}",
+              10
+            ],
+            [
+              "{@dice D10}",
+              10
+            ],
+            [
+              "{@dice D12}",
+              12
+            ],
+            [
+              "{@dice D12}",
+              12
+            ],
+            [
+              "{@dice D12}",
+              12
+            ],
+            [
+              "{@dice D12}",
+              12
+            ]
+          ]
+        }
+      ],
+      "subclassFeatures": [
+        "Soulknife|Rogue|XPHB|Soulknife|XPHB|3",
+        "Soul Blades|Rogue|XPHB|Soulknife |XPHB|9",
+        "Psychic Veil|Rogue|XPHB|Soulknife|XPHB|13",
+        "Rend Mind|Rogue|XPHB|Soulknife|XPHB|17"
+      ]
+    }
+  ]
+}

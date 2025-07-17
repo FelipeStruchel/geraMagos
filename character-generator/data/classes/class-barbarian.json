@@ -1,0 +1,535 @@
+{
+  "class": [
+    {
+      "name": "Barbarian",
+      "source": "XPHB",
+      "srd52": true,
+      "basicRules2024": true,
+      "primaryAbility": [
+        {
+          "str": true
+        }
+      ],
+      "hd": {
+        "number": 1,
+        "faces": 12
+      },
+      "proficiency": [
+        "str",
+        "con"
+      ],
+      "featProgression": [
+        {
+          "name": "Epic Boon",
+          "category": [
+            "EB"
+          ],
+          "progression": {
+            "19": 1
+          }
+        }
+      ],
+      "startingProficiencies": {
+        "armor": [
+          "light",
+          "medium",
+          "shield"
+        ],
+        "weapons": [
+          "simple",
+          "martial"
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "animal handling",
+                "athletics",
+                "intimidation",
+                "nature",
+                "perception",
+                "survival"
+              ],
+              "count": 2
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "defaultData": [
+          {
+            "A": [
+              {
+                "item": "greataxe|xphb"
+              },
+              {
+                "item": "handaxe|xphb",
+                "quantity": 4
+              },
+              {
+                "item": "explorer's pack|xphb"
+              },
+              {
+                "value": 1500
+              }
+            ],
+            "B": [
+              {
+                "value": 7500
+              }
+            ]
+          }
+        ],
+        "entries": [
+          "{@i Choose A or B:} (A) {@item Greataxe|XPHB}, 4 {@item Handaxe|XPHB|Handaxes}, {@item Explorer's Pack|XPHB}, and 15 GP; or (B) 75 GP"
+        ]
+      },
+      "multiclassing": {
+        "proficienciesGained": {
+          "armor": [
+            "shield"
+          ],
+          "weapons": [
+            "martial"
+          ]
+        }
+      },
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "Rages",
+            "Rage Damage",
+            "Weapon Mastery"
+          ],
+          "rows": [
+            [
+              "2",
+              {
+                "type": "bonus",
+                "value": 2
+              },
+              "2"
+            ],
+            [
+              "2",
+              {
+                "type": "bonus",
+                "value": 2
+              },
+              "2"
+            ],
+            [
+              "3",
+              {
+                "type": "bonus",
+                "value": 2
+              },
+              "2"
+            ],
+            [
+              "3",
+              {
+                "type": "bonus",
+                "value": 2
+              },
+              "3"
+            ],
+            [
+              "3",
+              {
+                "type": "bonus",
+                "value": 2
+              },
+              "3"
+            ],
+            [
+              "4",
+              {
+                "type": "bonus",
+                "value": 2
+              },
+              "3"
+            ],
+            [
+              "4",
+              {
+                "type": "bonus",
+                "value": 2
+              },
+              "3"
+            ],
+            [
+              "4",
+              {
+                "type": "bonus",
+                "value": 2
+              },
+              "3"
+            ],
+            [
+              "4",
+              {
+                "type": "bonus",
+                "value": 3
+              },
+              "3"
+            ],
+            [
+              "4",
+              {
+                "type": "bonus",
+                "value": 3
+              },
+              "4"
+            ],
+            [
+              "4",
+              {
+                "type": "bonus",
+                "value": 3
+              },
+              "4"
+            ],
+            [
+              "5",
+              {
+                "type": "bonus",
+                "value": 3
+              },
+              "4"
+            ],
+            [
+              "5",
+              {
+                "type": "bonus",
+                "value": 3
+              },
+              "4"
+            ],
+            [
+              "5",
+              {
+                "type": "bonus",
+                "value": 3
+              },
+              "4"
+            ],
+            [
+              "5",
+              {
+                "type": "bonus",
+                "value": 3
+              },
+              "4"
+            ],
+            [
+              "5",
+              {
+                "type": "bonus",
+                "value": 4
+              },
+              "4"
+            ],
+            [
+              "6",
+              {
+                "type": "bonus",
+                "value": 4
+              },
+              "4"
+            ],
+            [
+              "6",
+              {
+                "type": "bonus",
+                "value": 4
+              },
+              "4"
+            ],
+            [
+              "6",
+              {
+                "type": "bonus",
+                "value": 4
+              },
+              "4"
+            ],
+            [
+              "6",
+              {
+                "type": "bonus",
+                "value": 4
+              },
+              "4"
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "Rage|Barbarian|XPHB|1",
+        "Unarmored Defense|Barbarian|XPHB|1",
+        "Weapon Mastery|Barbarian|XPHB|1",
+        "Danger Sense|Barbarian|XPHB|2",
+        "Reckless Attack|Barbarian|XPHB|2",
+        {
+          "classFeature": "Barbarian Subclass|Barbarian|XPHB|3",
+          "gainSubclassFeature": true
+        },
+        "Primal Knowledge|Barbarian|XPHB|3",
+        "Ability Score Improvement|Barbarian|XPHB|4",
+        "Extra Attack|Barbarian|XPHB|5",
+        "Fast Movement|Barbarian|XPHB|5",
+        {
+          "classFeature": "Subclass Feature|Barbarian|XPHB|6",
+          "gainSubclassFeature": true
+        },
+        "Feral Instinct|Barbarian|XPHB|7",
+        "Instinctive Pounce|Barbarian|XPHB|7",
+        "Ability Score Improvement|Barbarian|XPHB|8",
+        "Brutal Strike|Barbarian|XPHB|9",
+        {
+          "classFeature": "Subclass Feature|Barbarian|XPHB|10",
+          "gainSubclassFeature": true
+        },
+        "Relentless Rage|Barbarian|XPHB|11",
+        "Ability Score Improvement|Barbarian|XPHB|12",
+        "Improved Brutal Strike|Barbarian|XPHB|13",
+        {
+          "classFeature": "Subclass Feature|Barbarian|XPHB|14",
+          "gainSubclassFeature": true
+        },
+        "Persistent Rage|Barbarian|XPHB|15",
+        "Ability Score Improvement|Barbarian|XPHB|16",
+        "Improved Brutal Strike|Barbarian|XPHB|17",
+        "Indomitable Might|Barbarian|XPHB|18",
+        "Epic Boon|Barbarian|XPHB|19",
+        "Primal Champion|Barbarian|XPHB|20"
+      ],
+      "subclassTitle": "Barbarian Subclass"
+    }
+  ],
+  "subclass": [
+    {
+      "name": "Path of the Berserker",
+      "shortName": "Berserker",
+      "source": "XPHB",
+      "className": "Barbarian",
+      "classSource": "XPHB",
+      "srd52": true,
+      "subclassFeatures": [
+        "Path of the Berserker|Barbarian|XPHB|Berserker|XPHB|3",
+        "Mindless Rage|Barbarian|XPHB|Berserker|XPHB|6",
+        "Retaliation|Barbarian|XPHB|Berserker|XPHB|10",
+        "Intimidating Presence|Barbarian|XPHB|Berserker|XPHB|14"
+      ]
+    },
+    {
+      "name": "Path of the Totem Warrior",
+      "shortName": "Totem Warrior",
+      "source": "PHB",
+      "className": "Barbarian",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "innate": {
+            "3": {
+              "ritual": [
+                "beast sense",
+                "speak with animals"
+              ]
+            },
+            "10": {
+              "ritual": [
+                "commune with nature"
+              ]
+            }
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Path of the Totem Warrior|Barbarian||Totem Warrior||3",
+        "Aspect of the Beast|Barbarian||Totem Warrior||6",
+        "Spirit Walker|Barbarian||Totem Warrior||10",
+        "Totemic Attunement|Barbarian||Totem Warrior||14"
+      ]
+    },
+    {
+      "name": "Path of the Battlerager",
+      "shortName": "Battlerager",
+      "source": "SCAG",
+      "className": "Barbarian",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Path of the Battlerager|Barbarian||Battlerager|SCAG|3",
+        "Reckless Abandon|Barbarian||Battlerager|SCAG|6",
+        "Battlerager Charge|Barbarian||Battlerager|SCAG|10",
+        "Spiked Retribution|Barbarian||Battlerager|SCAG|14"
+      ]
+    },
+    {
+      "name": "Path of the Ancestral Guardian",
+      "shortName": "Ancestral Guardian",
+      "source": "XGE",
+      "className": "Barbarian",
+      "classSource": "PHB",
+      "spellcastingAbility": "wis",
+      "additionalSpells": [
+        {
+          "innate": {
+            "10": [
+              "augury",
+              "clairvoyance"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Path of the Ancestral Guardian|Barbarian||Ancestral Guardian|XGE|3",
+        "Spirit Shield|Barbarian||Ancestral Guardian|XGE|6",
+        "Consult the Spirits|Barbarian||Ancestral Guardian|XGE|10",
+        "Vengeful Ancestors|Barbarian||Ancestral Guardian|XGE|14"
+      ]
+    },
+    {
+      "name": "Path of the Storm Herald",
+      "shortName": "Storm Herald",
+      "source": "XGE",
+      "className": "Barbarian",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Path of the Storm Herald|Barbarian||Storm Herald|XGE|3",
+        "Storm Soul|Barbarian||Storm Herald|XGE|6",
+        "Shielding Storm|Barbarian||Storm Herald|XGE|10",
+        "Raging Storm|Barbarian||Storm Herald|XGE|14"
+      ]
+    },
+    {
+      "name": "Path of the Zealot",
+      "shortName": "Zealot",
+      "source": "XPHB",
+      "className": "Barbarian",
+      "classSource": "XPHB",
+      "subclassFeatures": [
+        "Path of the Zealot|Barbarian|XPHB|Zealot|XPHB|3",
+        "Fanatical Focus|Barbarian|XPHB|Zealot|XPHB|6",
+        "Zealous Presence|Barbarian|XPHB|Zealot|XPHB|10",
+        "Rage of the Gods|Barbarian|XPHB|Zealot|XPHB|14"
+      ]
+    },
+    {
+      "name": "Path of the Beast",
+      "shortName": "Beast",
+      "source": "TCE",
+      "className": "Barbarian",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Path of the Beast|Barbarian||Beast|TCE|3",
+        "Bestial Soul|Barbarian||Beast|TCE|6",
+        "Infectious Fury|Barbarian||Beast|TCE|10",
+        "Call the Hunt|Barbarian||Beast|TCE|14"
+      ]
+    },
+    {
+      "name": "Path of Wild Magic",
+      "shortName": "Wild Magic",
+      "source": "TCE",
+      "className": "Barbarian",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Path of Wild Magic|Barbarian||Wild Magic|TCE|3",
+        "Bolstering Magic|Barbarian||Wild Magic|TCE|6",
+        "Unstable Backlash|Barbarian||Wild Magic|TCE|10",
+        "Controlled Surge|Barbarian||Wild Magic|TCE|14"
+      ]
+    },
+    {
+      "name": "Path of the Juggernaut",
+      "shortName": "Juggernaut",
+      "source": "TDCSR",
+      "className": "Barbarian",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Path of the Juggernaut|Barbarian|PHB|Juggernaut|TDCSR|3",
+        "Demolishing Might|Barbarian|PHB|Juggernaut|TDCSR|6",
+        "Resolute Stance|Barbarian|PHB|Juggernaut|TDCSR|6",
+        "Thunderous Blows (10th Level)|Barbarian|PHB|Juggernaut|TDCSR|10",
+        "Hurricane Strike|Barbarian|PHB|Juggernaut|TDCSR|10",
+        "Unstoppable|Barbarian|PHB|Juggernaut|TDCSR|14"
+      ]
+    },
+    {
+      "name": "Path of the Giant",
+      "shortName": "Giant",
+      "source": "BGG",
+      "className": "Barbarian",
+      "classSource": "PHB",
+      "spellcastingAbility": "wis",
+      "additionalSpells": [
+        {
+          "innate": {
+            "3": [
+              "druidcraft#c"
+            ]
+          }
+        },
+        {
+          "innate": {
+            "3": [
+              "thaumaturgy#c"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Path of the Giant|Barbarian||Giant|BGG|3",
+        "Elemental Cleaver|Barbarian||Giant|BGG|6",
+        "Mighty Impel|Barbarian||Giant|BGG|10",
+        "Demiurgic Colossus|Barbarian||Giant|BGG|14"
+      ]
+    },
+    {
+      "name": "Path of the Wild Heart",
+      "shortName": "Wild Heart",
+      "source": "XPHB",
+      "className": "Barbarian",
+      "classSource": "XPHB",
+      "additionalSpells": [
+        {
+          "innate": {
+            "3": {
+              "ritual": [
+                "beast sense|xphb",
+                "speak with animals|xphb"
+              ]
+            },
+            "10": {
+              "ritual": [
+                "commune with nature|xphb"
+              ]
+            }
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Path of the Wild Heart|Barbarian|XPHB|Wild Heart|XPHB|3",
+        "Aspect of the Wilds|Barbarian|XPHB|Wild Heart|XPHB|6",
+        "Nature Speaker|Barbarian|XPHB|Wild Heart|XPHB|10",
+        "Power of the Wilds|Barbarian|XPHB|Wild Heart|XPHB|14"
+      ]
+    },
+    {
+      "name": "Path of the World Tree",
+      "shortName": "World Tree",
+      "source": "XPHB",
+      "className": "Barbarian",
+      "classSource": "XPHB",
+      "subclassFeatures": [
+        "Path of the World Tree|Barbarian|XPHB|World Tree|XPHB|3",
+        "Branches of the Tree|Barbarian|XPHB|World Tree|XPHB|6",
+        "Battering Roots|Barbarian|XPHB|World Tree|XPHB|10",
+        "Travel Along the Tree|Barbarian|XPHB|World Tree|XPHB|14"
+      ]
+    }
+  ]
+}

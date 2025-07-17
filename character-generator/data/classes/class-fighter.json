@@ -1,0 +1,902 @@
+{
+  "class": [
+    {
+      "name": "Fighter",
+      "source": "XPHB",
+      "srd52": true,
+      "basicRules2024": true,
+      "primaryAbility": [
+        {
+          "str": true
+        },
+        {
+          "dex": true
+        }
+      ],
+      "hd": {
+        "number": 1,
+        "faces": 10
+      },
+      "proficiency": [
+        "str",
+        "con"
+      ],
+      "featProgression": [
+        {
+          "name": "Fighting Style",
+          "category": [
+            "FS"
+          ],
+          "progression": {
+            "1": 1
+          }
+        },
+        {
+          "name": "Epic Boon",
+          "category": [
+            "EB"
+          ],
+          "progression": {
+            "19": 1
+          }
+        }
+      ],
+      "startingProficiencies": {
+        "armor": [
+          "light",
+          "medium",
+          "heavy",
+          "shield"
+        ],
+        "weapons": [
+          "simple",
+          "martial"
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "acrobatics",
+                "animal handling",
+                "athletics",
+                "history",
+                "insight",
+                "intimidation",
+                "persuasion",
+                "perception",
+                "survival"
+              ],
+              "count": 2
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "defaultData": [
+          {
+            "A": [
+              {
+                "item": "chain mail|xphb"
+              },
+              {
+                "item": "greatsword|xphb"
+              },
+              {
+                "item": "flail|xphb"
+              },
+              {
+                "item": "javelin|xphb",
+                "quantity": 8
+              },
+              {
+                "item": "dungeoneer's pack|xphb"
+              },
+              {
+                "value": 400
+              }
+            ],
+            "B": [
+              {
+                "item": "studded leather armor|xphb"
+              },
+              {
+                "item": "scimitar|xphb"
+              },
+              {
+                "item": "shortsword|xphb"
+              },
+              {
+                "item": "longbow|xphb"
+              },
+              {
+                "item": "arrows (20)|xphb"
+              },
+              {
+                "item": "quiver|xphb"
+              },
+              {
+                "item": "dungeoneer's pack|xphb"
+              },
+              {
+                "value": 1100
+              }
+            ],
+            "C": [
+              {
+                "value": 15500
+              }
+            ]
+          }
+        ],
+        "entries": [
+          "{@i Choose A, B, or C:} (A) {@item Chain Mail|XPHB}, {@item Greatsword|XPHB}, {@item Flail|XPHB}, 8 {@item Javelin|XPHB|Javelins}, {@item Dungeoneer's Pack|XPHB}, and 4 GP; (B) {@item Studded Leather Armor|XPHB}, {@item Scimitar|XPHB}, {@item Shortsword|XPHB}, {@item Longbow|XPHB}, {@item Arrows (20)|XPHB|20 Arrows}, {@item Quiver|XPHB}, {@item Dungeoneer's Pack|XPHB}, and 11 GP; or (C) 155 GP"
+        ]
+      },
+      "multiclassing": {
+        "proficienciesGained": {
+          "armor": [
+            "light",
+            "medium",
+            "shield"
+          ],
+          "weapons": [
+            "martial"
+          ]
+        }
+      },
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "Second Wind",
+            "Weapon Mastery"
+          ],
+          "rows": [
+            [
+              "2",
+              "3"
+            ],
+            [
+              "2",
+              "3"
+            ],
+            [
+              "2",
+              "3"
+            ],
+            [
+              "3",
+              "4"
+            ],
+            [
+              "3",
+              "4"
+            ],
+            [
+              "3",
+              "4"
+            ],
+            [
+              "3",
+              "4"
+            ],
+            [
+              "3",
+              "4"
+            ],
+            [
+              "3",
+              "4"
+            ],
+            [
+              "4",
+              "5"
+            ],
+            [
+              "4",
+              "5"
+            ],
+            [
+              "4",
+              "5"
+            ],
+            [
+              "4",
+              "5"
+            ],
+            [
+              "4",
+              "5"
+            ],
+            [
+              "4",
+              "5"
+            ],
+            [
+              "4",
+              "6"
+            ],
+            [
+              "4",
+              "6"
+            ],
+            [
+              "4",
+              "6"
+            ],
+            [
+              "4",
+              "6"
+            ],
+            [
+              "4",
+              "6"
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "Fighting Style|Fighter|XPHB|1",
+        "Second Wind|Fighter|XPHB|1",
+        "Weapon Mastery|Fighter|XPHB|1",
+        "Action Surge|Fighter|XPHB|2",
+        "Tactical Mind|Fighter|XPHB|2",
+        {
+          "classFeature": "Fighter Subclass|Fighter|XPHB|3",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Fighter|XPHB|4",
+        "Extra Attack|Fighter|XPHB|5",
+        "Tactical Shift|Fighter|XPHB|5",
+        "Ability Score Improvement|Fighter|XPHB|6",
+        {
+          "classFeature": "Subclass Feature|Fighter|XPHB|7",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Fighter|XPHB|8",
+        "Indomitable|Fighter|XPHB|9",
+        "Tactical Master|Fighter|XPHB|9",
+        {
+          "classFeature": "Subclass Feature|Fighter|XPHB|10",
+          "gainSubclassFeature": true
+        },
+        "Two Extra Attacks|Fighter|XPHB|11",
+        "Ability Score Improvement|Fighter|XPHB|12",
+        "Indomitable|Fighter|XPHB|13",
+        "Studied Attacks|Fighter|XPHB|13",
+        "Ability Score Improvement|Fighter|XPHB|14",
+        {
+          "classFeature": "Subclass Feature|Fighter|XPHB|15",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Fighter|XPHB|16",
+        "Action Surge|Fighter|XPHB|17",
+        "Indomitable|Fighter|XPHB|17",
+        {
+          "classFeature": "Subclass Feature|Fighter|XPHB|18",
+          "gainSubclassFeature": true
+        },
+        "Epic Boon|Fighter|XPHB|19",
+        "Three Extra Attacks|Fighter|XPHB|20"
+      ],
+      "subclassTitle": "Fighter Subclass"
+    }
+  ],
+  "subclass": [
+    {
+      "name": "Battle Master",
+      "shortName": "Battle Master",
+      "source": "XPHB",
+      "className": "Fighter",
+      "classSource": "XPHB",
+      "optionalfeatureProgression": [
+        {
+          "name": "Maneuvers",
+          "featureType": [
+            "MV:B"
+          ],
+          "progression": {
+            "3": 3,
+            "7": 5,
+            "10": 7,
+            "15": 9
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Battle Master|Fighter|XPHB|Battle Master|XPHB|3",
+        "Know Your Enemy|Fighter|XPHB|Battle Master|XPHB|7",
+        "Improved Combat Superiority|Fighter|XPHB|Battle Master|XPHB|10",
+        "Relentless|Fighter|XPHB|Battle Master|XPHB|15",
+        "Ultimate Combat Superiority|Fighter|XPHB|Battle Master|XPHB|18"
+      ]
+    },
+    {
+      "name": "Champion",
+      "shortName": "Champion",
+      "source": "XPHB",
+      "className": "Fighter",
+      "classSource": "XPHB",
+      "srd52": true,
+      "basicRules2024": true,
+      "featProgression": [
+        {
+          "name": "Fighting Style",
+          "category": [
+            "FS"
+          ],
+          "progression": {
+            "7": 1
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Champion|Fighter|XPHB|Champion|XPHB|3",
+        "Additional Fighting Style|Fighter|XPHB|Champion|XPHB|7",
+        "Heroic Warrior|Fighter|XPHB|Champion|XPHB|10",
+        "Superior Critical|Fighter|XPHB|Champion|XPHB|15",
+        "Survivor|Fighter|XPHB|Champion|XPHB|18"
+      ]
+    },
+    {
+      "name": "Eldritch Knight",
+      "shortName": "Eldritch Knight",
+      "source": "XPHB",
+      "className": "Fighter",
+      "classSource": "XPHB",
+      "spellcastingAbility": "int",
+      "casterProgression": "1/3",
+      "preparedSpellsProgression": [
+        0,
+        0,
+        3,
+        4,
+        4,
+        4,
+        5,
+        6,
+        6,
+        7,
+        8,
+        8,
+        9,
+        10,
+        10,
+        11,
+        11,
+        11,
+        12,
+        13
+      ],
+      "preparedSpellsChange": "level",
+      "cantripProgression": [
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "additionalSpells": [
+        {
+          "expanded": {
+            "3": [
+              {
+                "all": "level=0|class=Wizard"
+              },
+              {
+                "all": "level=1|class=Wizard"
+              }
+            ],
+            "7": [
+              {
+                "all": "level=2|class=Wizard"
+              }
+            ],
+            "13": [
+              {
+                "all": "level=3|class=Wizard"
+              }
+            ],
+            "19": [
+              {
+                "all": "level=4|class=Wizard"
+              }
+            ]
+          }
+        }
+      ],
+      "subclassTableGroups": [
+        {
+          "subclasses": [
+            {
+              "name": "Eldritch Knight",
+              "source": "XPHB"
+            }
+          ],
+          "colLabels": [
+            "{@filter Spells Prepared|spells|subclass=Fighter: Eldritch Knight}"
+          ],
+          "rows": [
+            [
+              0
+            ],
+            [
+              0
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              8
+            ],
+            [
+              9
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              11
+            ],
+            [
+              11
+            ],
+            [
+              11
+            ],
+            [
+              12
+            ],
+            [
+              13
+            ]
+          ]
+        },
+        {
+          "title": "Spell Slots per Spell Level",
+          "subclasses": [
+            {
+              "name": "Eldritch Knight",
+              "source": "XPHB"
+            }
+          ],
+          "colLabels": [
+            "{@filter 1st|spells|level=1|subclass=Fighter: Eldritch Knight}",
+            "{@filter 2nd|spells|level=2|subclass=Fighter: Eldritch Knight}",
+            "{@filter 3rd|spells|level=3|subclass=Fighter: Eldritch Knight}",
+            "{@filter 4th|spells|level=4|subclass=Fighter: Eldritch Knight}"
+          ],
+          "rowsSpellProgression": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              2,
+              0
+            ],
+            [
+              4,
+              3,
+              2,
+              0
+            ],
+            [
+              4,
+              3,
+              2,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              1
+            ]
+          ]
+        }
+      ],
+      "subclassFeatures": [
+        "Eldritch Knight|Fighter|XPHB|Eldritch Knight|XPHB|3",
+        "War Magic|Fighter|XPHB|Eldritch Knight|XPHB|7",
+        "Eldritch Strike|Fighter|XPHB|Eldritch Knight|XPHB|10",
+        "Arcane Charge|Fighter|XPHB|Eldritch Knight|XPHB|15",
+        "Improved War Magic|Fighter|XPHB|Eldritch Knight|XPHB|18"
+      ]
+    },
+    {
+      "name": "Purple Dragon Knight (Banneret)",
+      "shortName": "Purple Dragon Knight (Banneret)",
+      "source": "SCAG",
+      "className": "Fighter",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Purple Dragon Knight (Banneret)|Fighter||Purple Dragon Knight (Banneret)|SCAG|3",
+        "Royal Envoy|Fighter||Purple Dragon Knight (Banneret)|SCAG|7",
+        "Inspiring Surge|Fighter||Purple Dragon Knight (Banneret)|SCAG|10",
+        "Bulwark|Fighter||Purple Dragon Knight (Banneret)|SCAG|15",
+        "Inspiring Surge|Fighter||Purple Dragon Knight (Banneret)|SCAG|18"
+      ]
+    },
+    {
+      "name": "Arcane Archer",
+      "shortName": "Arcane Archer",
+      "source": "XGE",
+      "className": "Fighter",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "known": {
+            "3": [
+              "prestidigitation#c"
+            ]
+          }
+        },
+        {
+          "known": {
+            "3": [
+              "druidcraft#c"
+            ]
+          }
+        }
+      ],
+      "optionalfeatureProgression": [
+        {
+          "name": "Arcane Shots",
+          "featureType": [
+            "AS"
+          ],
+          "progression": {
+            "3": 2,
+            "7": 3,
+            "10": 4,
+            "15": 5,
+            "18": 6
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Arcane Archer|Fighter||Arcane Archer|XGE|3",
+        "Magic Arrow|Fighter||Arcane Archer|XGE|7",
+        "Curving Shot|Fighter||Arcane Archer|XGE|7",
+        "Additional Arcane Shot Option|Fighter||Arcane Archer|XGE|7",
+        "Additional Arcane Shot Option|Fighter||Arcane Archer|XGE|10",
+        "Ever-Ready Shot|Fighter||Arcane Archer|XGE|15",
+        "Additional Arcane Shot Option|Fighter||Arcane Archer|XGE|15",
+        "Additional Arcane Shot Option|Fighter||Arcane Archer|XGE|18"
+      ]
+    },
+    {
+      "name": "Cavalier",
+      "shortName": "Cavalier",
+      "source": "XGE",
+      "className": "Fighter",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Cavalier|Fighter||Cavalier|XGE|3",
+        "Warding Maneuver|Fighter||Cavalier|XGE|7",
+        "Hold the Line|Fighter||Cavalier|XGE|10",
+        "Ferocious Charger|Fighter||Cavalier|XGE|15",
+        "Vigilant Defender|Fighter||Cavalier|XGE|18"
+      ]
+    },
+    {
+      "name": "Samurai",
+      "shortName": "Samurai",
+      "source": "XGE",
+      "className": "Fighter",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Samurai|Fighter||Samurai|XGE|3",
+        "Elegant Courtier|Fighter||Samurai|XGE|7",
+        "Tireless Spirit|Fighter||Samurai|XGE|10",
+        "Rapid Strike|Fighter||Samurai|XGE|15",
+        "Strength before Death|Fighter||Samurai|XGE|18"
+      ]
+    },
+    {
+      "name": "Echo Knight",
+      "shortName": "Echo Knight",
+      "source": "EGW",
+      "className": "Fighter",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Echo Knight|Fighter||Echo Knight|EGW|3",
+        "Echo Avatar|Fighter||Echo Knight|EGW|7",
+        "Shadow Martyr|Fighter||Echo Knight|EGW|10",
+        "Reclaim Potential|Fighter||Echo Knight|EGW|15",
+        "Legion of One|Fighter||Echo Knight|EGW|18"
+      ]
+    },
+    {
+      "name": "Psi Warrior",
+      "shortName": "Psi Warrior",
+      "source": "XPHB",
+      "className": "Fighter",
+      "classSource": "XPHB",
+      "additionalSpells": [
+        {
+          "innate": {
+            "18": {
+              "daily": {
+                "1": [
+                  "telekinesis|xphb"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "subclassTableGroups": [
+        {
+          "subclasses": [
+            {
+              "name": "Psi Warrior",
+              "source": "XPHB"
+            }
+          ],
+          "colLabels": [
+            "{@tip Die Size|Psionic Energy Die Size}",
+            "{@tip Number|Psionic Energy Die Number}"
+          ],
+          "rows": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              "{@dice D6}",
+              4
+            ],
+            [
+              "{@dice D6}",
+              4
+            ],
+            [
+              "{@dice D8}",
+              6
+            ],
+            [
+              "{@dice D8}",
+              6
+            ],
+            [
+              "{@dice D8}",
+              6
+            ],
+            [
+              "{@dice D8}",
+              6
+            ],
+            [
+              "{@dice D8}",
+              8
+            ],
+            [
+              "{@dice D8}",
+              8
+            ],
+            [
+              "{@dice D10}",
+              8
+            ],
+            [
+              "{@dice D10}",
+              8
+            ],
+            [
+              "{@dice D10}",
+              10
+            ],
+            [
+              "{@dice D10}",
+              10
+            ],
+            [
+              "{@dice D10}",
+              10
+            ],
+            [
+              "{@dice D10}",
+              10
+            ],
+            [
+              "{@dice D12}",
+              12
+            ],
+            [
+              "{@dice D12}",
+              12
+            ],
+            [
+              "{@dice D12}",
+              12
+            ],
+            [
+              "{@dice D12}",
+              12
+            ]
+          ]
+        }
+      ],
+      "subclassFeatures": [
+        "Psi Warrior|Fighter|XPHB|Psi Warrior|XPHB|3",
+        "Telekinetic Adept|Fighter|XPHB|Psi Warrior|XPHB|7",
+        "Guarded Mind|Fighter|XPHB|Psi Warrior|XPHB|10",
+        "Bulwark of Force|Fighter|XPHB|Psi Warrior|XPHB|15",
+        "Telekinetic Master|Fighter|XPHB|Psi Warrior|XPHB|18"
+      ]
+    },
+    {
+      "name": "Rune Knight",
+      "shortName": "Rune Knight",
+      "source": "TCE",
+      "className": "Fighter",
+      "classSource": "PHB",
+      "optionalfeatureProgression": [
+        {
+          "name": "Runes",
+          "featureType": [
+            "RN"
+          ],
+          "progression": {
+            "3": 2,
+            "7": 3,
+            "10": 4,
+            "15": 5
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Rune Knight|Fighter||Rune Knight|TCE|3",
+        "Runic Shield|Fighter||Rune Knight|TCE|7",
+        "Additional Rune Known|Fighter||Rune Knight|TCE|7",
+        "Great Stature|Fighter||Rune Knight|TCE|10",
+        "Additional Rune Known|Fighter||Rune Knight|TCE|10",
+        "Master of Runes|Fighter||Rune Knight|TCE|15",
+        "Additional Rune Known|Fighter||Rune Knight|TCE|15",
+        "Runic Juggernaut|Fighter||Rune Knight|TCE|18"
+      ]
+    }
+  ]
+}

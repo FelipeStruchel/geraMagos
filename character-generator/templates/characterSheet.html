@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Personagem D&D 2024</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.4;
+            color: #333;
+            background: #fff;
+            font-size: 10px;
+        }
+        
+        .character-sheet {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 8mm;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 12px;
+            border-bottom: 3px solid #8B4513;
+            padding-bottom: 8px;
+        }
+        
+        .character-name {
+            font-size: 20px;
+            font-weight: 700;
+            color: #8B4513;
+            margin-bottom: 4px;
+        }
+        
+        .character-subtitle {
+            font-size: 12px;
+            color: #666;
+            font-weight: 500;
+        }
+        
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+        
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .section {
+            border: 2px solid #8B4513;
+            border-radius: 6px;
+            padding: 8px;
+            background: #fafafa;
+        }
+        
+        .section-title {
+            font-size: 12px;
+            font-weight: 700;
+            color: #8B4513;
+            margin-bottom: 6px;
+            border-bottom: 1px solid #8B4513;
+            padding-bottom: 3px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 6px;
+        }
+        
+        .stat-box {
+            text-align: center;
+            border: 2px solid #8B4513;
+            border-radius: 4px;
+            padding: 6px 3px;
+            background: #fff;
+        }
+        
+        .stat-name {
+            font-size: 8px;
+            font-weight: 700;
+            color: #8B4513;
+            margin-bottom: 3px;
+            text-transform: uppercase;
+        }
+        
+        .stat-value {
+            font-size: 14px;
+            font-weight: 700;
+            color: #333;
+        }
+        
+        .stat-modifier {
+            font-size: 8px;
+            color: #666;
+            margin-top: 2px;
+            font-weight: 600;
+        }
+        
+        .combat-section {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+        }
+        
+        .combat-box {
+            text-align: center;
+            border: 2px solid #8B4513;
+            border-radius: 4px;
+            padding: 6px;
+            background: #fff;
+        }
+        
+        .combat-label {
+            font-size: 8px;
+            font-weight: 700;
+            color: #8B4513;
+            margin-bottom: 3px;
+            text-transform: uppercase;
+        }
+        
+        .combat-value {
+            font-size: 12px;
+            font-weight: 700;
+            color: #333;
+        }
+        
+        .hit-points {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px;
+        }
+        
+        .hp-box {
+            text-align: center;
+            border: 2px solid #8B4513;
+            border-radius: 4px;
+            padding: 6px;
+            background: #fff;
+        }
+        
+        .hp-label {
+            font-size: 8px;
+            font-weight: 700;
+            color: #8B4513;
+            margin-bottom: 3px;
+            text-transform: uppercase;
+        }
+        
+        .hp-value {
+            font-size: 12px;
+            font-weight: 700;
+            color: #333;
+        }
+        
+        .proficiency-bonus {
+            font-size: 14px;
+            font-weight: 700;
+            color: #8B4513;
+            text-align: center;
+            padding: 8px;
+            background: #fff3cd;
+            border: 2px solid #8B4513;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+        
+        .spells-section {
+            flex: 1;
+            overflow: hidden;
+        }
+        
+        .spell-level {
+            margin-bottom: 6px;
+        }
+        
+        .spell-level-title {
+            font-size: 10px;
+            font-weight: 700;
+            color: #8B4513;
+            margin-bottom: 3px;
+            border-bottom: 1px solid #8B4513;
+            padding-bottom: 2px;
+            text-transform: uppercase;
+        }
+        
+        .spell-list {
+            font-size: 8px;
+            line-height: 1.2;
+            color: #555;
+        }
+        
+        .spell-item {
+            margin-bottom: 1px;
+            padding-left: 6px;
+        }
+        
+        .equipment-section {
+            flex: 1;
+            overflow: hidden;
+        }
+        
+        .equipment-list {
+            font-size: 8px;
+            line-height: 1.2;
+            color: #555;
+        }
+        
+        .equipment-item {
+            margin-bottom: 3px;
+            padding: 3px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+        
+        .equipment-name {
+            font-size: 9px;
+            font-weight: 600;
+            color: #8B4513;
+            margin-bottom: 1px;
+        }
+        
+        .equipment-desc {
+            font-size: 7px;
+            color: #666;
+            line-height: 1.1;
+        }
+        
+        .features-section {
+            flex: 1;
+            overflow: hidden;
+        }
+        
+        .feature-item {
+            margin-bottom: 4px;
+            padding: 3px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+        
+        .feature-name {
+            font-size: 9px;
+            font-weight: 600;
+            color: #8B4513;
+            margin-bottom: 1px;
+        }
+        
+        .feature-description {
+            font-size: 7px;
+            color: #666;
+            line-height: 1.1;
+        }
+        
+        .background-section {
+            margin-bottom: 8px;
+        }
+        
+        .background-text {
+            font-size: 8px;
+            color: #555;
+            line-height: 1.3;
+            text-align: justify;
+        }
+        
+        .personality-section {
+            margin-bottom: 8px;
+        }
+        
+        .personality-text {
+            font-size: 8px;
+            color: #555;
+            line-height: 1.3;
+            text-align: justify;
+        }
+        
+        .why-strong-section {
+            margin-bottom: 8px;
+        }
+        
+        .why-strong-text {
+            font-size: 8px;
+            color: #555;
+            line-height: 1.3;
+            text-align: justify;
+        }
+        
+        .how-to-play-section {
+            margin-bottom: 8px;
+        }
+        
+        .how-to-play-text {
+            font-size: 8px;
+            color: #555;
+            line-height: 1.3;
+            text-align: justify;
+        }
+        
+        .race-info-section {
+            margin-bottom: 8px;
+        }
+        
+        .race-info-text {
+            font-size: 8px;
+            color: #555;
+            line-height: 1.3;
+        }
+        
+        .class-info-section {
+            margin-bottom: 8px;
+        }
+        
+        .class-info-text {
+            font-size: 8px;
+            color: #555;
+            line-height: 1.3;
+        }
+        
+        .race-traits {
+            margin-top: 4px;
+        }
+        
+        .race-trait {
+            margin-bottom: 3px;
+            padding: 2px;
+            border-left: 2px solid #8B4513;
+            padding-left: 4px;
+        }
+        
+        .race-trait strong {
+            color: #8B4513;
+            font-size: 8px;
+        }
+        
+        .spell-slots-section {
+            margin-bottom: 8px;
+        }
+        
+        .spell-slots-row {
+            display: flex;
+            gap: 4px;
+            flex-wrap: wrap;
+        }
+        
+        .spell-slot-circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #8B4513;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 8px;
+            border: 1px solid #8B4513;
+        }
+        
+        .spell-slot-circle[data-empty="true"] {
+            background: #f5f5f5;
+            color: #bbb;
+            border: 1px dashed #ddd;
+        }
+        
+
+        
+        @media print {
+            body, html {
+                width: 210mm;
+                min-height: 297mm;
+                margin: 0;
+                padding: 0;
+                background: #fff !important;
+            }
+            .character-sheet {
+                box-shadow: none !important;
+                margin: 0 !important;
+                padding: 8mm !important;
+                page-break-after: avoid;
+            }
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="character-sheet">
+        <div class="header">
+            <div class="character-name">{{characterName}}</div>
+            <div class="character-subtitle">{{race}} {{class}}{{#if subclass}} ({{subclass}}){{/if}} - Nível {{level}}</div>
+        </div>
+        
+        <div class="main-grid">
+            <div class="left-column">
+                <!-- Atributos -->
+                <div class="section">
+                    <div class="section-title">Atributos</div>
+                    <div class="stats-grid">
+                        <div class="stat-box">
+                            <div class="stat-name">FOR</div>
+                            <div class="stat-value">{{strength}}</div>
+                            <div class="stat-modifier">{{strengthModifier}}</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-name">DES</div>
+                            <div class="stat-value">{{dexterity}}</div>
+                            <div class="stat-modifier">{{dexterityModifier}}</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-name">CON</div>
+                            <div class="stat-value">{{constitution}}</div>
+                            <div class="stat-modifier">{{constitutionModifier}}</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-name">INT</div>
+                            <div class="stat-value">{{intelligence}}</div>
+                            <div class="stat-modifier">{{intelligenceModifier}}</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-name">SAB</div>
+                            <div class="stat-value">{{wisdom}}</div>
+                            <div class="stat-modifier">{{wisdomModifier}}</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-name">CAR</div>
+                            <div class="stat-value">{{charisma}}</div>
+                            <div class="stat-modifier">{{charismaModifier}}</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Combate -->
+                <div class="section">
+                    <div class="section-title">Combate</div>
+                    <div class="combat-section">
+                        <div class="combat-box">
+                            <div class="combat-label">Classe de Armadura</div>
+                            <div class="combat-value">{{armorClass}}</div>
+                        </div>
+                        <div class="combat-box">
+                            <div class="combat-label">Iniciativa</div>
+                            <div class="combat-value">{{initiative}}</div>
+                        </div>
+                        <div class="combat-box">
+                            <div class="combat-label">Deslocamento</div>
+                            <div class="combat-value">{{speed}} pés</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pontos de Vida -->
+                <div class="section">
+                    <div class="section-title">Pontos de Vida</div>
+                    <div class="hit-points">
+                        <div class="hp-box">
+                            <div class="hp-label">Máximo</div>
+                            <div class="hp-value">{{maxHitPoints}}</div>
+                        </div>
+                        <div class="hp-box">
+                            <div class="hp-label">Atual</div>
+                            <div class="hp-value">{{currentHitPoints}}</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bônus de Proficiência -->
+                <div class="section">
+                    <div class="section-title">Bônus de Proficiência</div>
+                    <div class="proficiency-bonus">+{{proficiencyBonus}}</div>
+                </div>
+                
+                <!-- Magias -->
+                {{#if spellLevels}}
+                <div class="section spells-section">
+                    <div class="section-title">Magias</div>
+                    {{#each spellLevels}}
+                    <div class="spell-level">
+                        <div class="spell-level-title">{{levelLabel}}</div>
+                        {{#each spells}}
+                        <div class="spell-detail">
+                            <div class="spell-name"><strong>{{name}}</strong></div>
+                            <div class="spell-meta">
+                                <span><strong>Nível:</strong> {{level}}</span> |
+                                <span><strong>Escola:</strong> {{school}}</span> |
+                                <span><strong>Tempo de Conjuração:</strong> {{castingTime}}</span> |
+                                <span><strong>Alcance:</strong> {{range}}</span> |
+                                <span><strong>Duração:</strong> {{duration}}</span>
+                            </div>
+                            <div class="spell-description">{{description}}</div>
+                        </div>
+                        {{/each}}
+                    </div>
+                    {{/each}}
+                </div>
+                {{/if}}
+                
+                <!-- Spell Slots -->
+                {{#if spellSlots}}
+                <div class="section spell-slots-section">
+                    <div class="section-title">Spell Slots</div>
+                    <div class="spell-slots-row">
+                        {{#each spellSlots}}
+                        <div class="spell-slot-circle" data-empty="{{#if (eq this 0)}}true{{else}}false{{/if}}">{{this}}</div>
+                        {{/each}}
+                    </div>
+                </div>
+                {{/if}}
+            </div>
+            
+            <div class="right-column">
+                <!-- Feats -->
+                {{#if featData}}
+                <div class="section features-section">
+                    <div class="section-title">Feats</div>
+                    {{#each featData}}
+                    <div class="feat-detail">
+                        <div class="feat-name"><strong>{{name}}</strong></div>
+                        <div class="feat-description">{{description}}</div>
+                    </div>
+                    {{/each}}
+                </div>
+                {{/if}}
+                
+                <!-- Equipamento -->
+                <div class="section equipment-section">
+                    <div class="section-title">Equipamento</div>
+                    <div class="equipment-list">
+                        {{#each equipment}}
+                        <div class="equipment-item">
+                            <div class="equipment-name">{{name}}</div>
+                            {{#if mechanicalDescription}}
+                            <div class="equipment-desc"><strong>Mecânico:</strong> {{mechanicalDescription}}</div>
+                            {{/if}}
+                            {{#if visualDescription}}
+                            <div class="equipment-desc"><strong>Visual:</strong> {{visualDescription}}</div>
+                            {{/if}}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+                
+                <!-- Por que é Forte -->
+                {{#if whyStrong}}
+                <div class="section why-strong-section">
+                    <div class="section-title">Por que é Forte</div>
+                    <div class="why-strong-text">{{whyStrong}}</div>
+                </div>
+                {{/if}}
+                
+                <!-- Como Jogar -->
+                {{#if howToPlay}}
+                <div class="section how-to-play-section">
+                    <div class="section-title">Como Jogar</div>
+                    <div class="how-to-play-text">{{howToPlay}}</div>
+                </div>
+                {{/if}}
+                
+                <!-- História de Fundo -->
+                {{#if background}}
+                <div class="section background-section">
+                    <div class="section-title">História de Fundo</div>
+                    <div class="background-text">{{background}}</div>
+                </div>
+                {{/if}}
+                
+                <!-- Personalidade -->
+                {{#if personality}}
+                <div class="section personality-section">
+                    <div class="section-title">Personalidade</div>
+                    <div class="personality-text">{{personality}}</div>
+                </div>
+                {{/if}}
+                
+                <!-- Informações da Raça -->
+                {{#if raceData}}
+                <div class="section race-info-section">
+                    <div class="section-title">Traços da Raça</div>
+                    <div class="race-info-text">
+                        <strong>{{raceData.name}}</strong><br>
+                        {{raceData.description}}
+                        {{#if raceData.traits}}
+                        <div class="race-traits">
+                            {{#each raceData.traits}}
+                            <div class="race-trait">
+                                <strong>{{name}}</strong><br>
+                                {{description}}
+                            </div>
+                            {{/each}}
+                        </div>
+                        {{/if}}
+                    </div>
+                </div>
+                {{/if}}
+                
+                <!-- Informações da Classe -->
+                {{#if classData}}
+                <div class="section class-info-section">
+                    <div class="section-title">Informações da Classe</div>
+                    <div class="class-info-text">
+                        <strong>{{classData.name}}</strong><br>
+                        {{classData.description}}<br>
+                        <strong>Dado de Vida:</strong> {{classData.hitDie}}<br>
+                        {{#if classData.primaryAbility}}
+                        <strong>Habilidade Principal:</strong> {{classPrimaryAbility}}
+                        {{/if}}
+                    </div>
+                </div>
+                {{/if}}
+                
+
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

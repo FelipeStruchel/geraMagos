@@ -1,0 +1,729 @@
+{
+  "class": [
+    {
+      "name": "Ranger",
+      "source": "XPHB",
+      "srd52": true,
+      "basicRules2024": true,
+      "primaryAbility": [
+        {
+          "dex": true,
+          "wis": true
+        }
+      ],
+      "hd": {
+        "number": 1,
+        "faces": 10
+      },
+      "proficiency": [
+        "str",
+        "dex"
+      ],
+      "spellcastingAbility": "wis",
+      "casterProgression": "artificer",
+      "preparedSpellsProgression": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        6,
+        7,
+        7,
+        9,
+        9,
+        10,
+        10,
+        11,
+        11,
+        12,
+        12,
+        14,
+        14,
+        15,
+        15
+      ],
+      "preparedSpellsChange": "restLong",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "1": [
+              "hunter's mark|xphb"
+            ]
+          }
+        }
+      ],
+      "featProgression": [
+        {
+          "name": "Fighting Style",
+          "category": [
+            "FS",
+            "FS:R"
+          ],
+          "progression": {
+            "2": 1
+          }
+        },
+        {
+          "name": "Epic Boon",
+          "category": [
+            "EB"
+          ],
+          "progression": {
+            "19": 1
+          }
+        }
+      ],
+      "startingProficiencies": {
+        "armor": [
+          "light",
+          "medium",
+          "shield"
+        ],
+        "weapons": [
+          "simple",
+          "martial"
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "animal handling",
+                "athletics",
+                "insight",
+                "investigation",
+                "nature",
+                "perception",
+                "stealth",
+                "survival"
+              ],
+              "count": 3
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "defaultData": [
+          {
+            "A": [
+              {
+                "item": "studded leather armor|xphb"
+              },
+              {
+                "item": "scimitar|xphb"
+              },
+              {
+                "item": "shortsword|xphb"
+              },
+              {
+                "item": "longbow|xphb"
+              },
+              {
+                "item": "arrows (20)|xphb"
+              },
+              {
+                "item": "quiver|xphb"
+              },
+              {
+                "item": "sprig of mistletoe|xphb"
+              },
+              {
+                "item": "explorer's pack|xphb"
+              },
+              {
+                "value": 700
+              }
+            ],
+            "B": [
+              {
+                "value": 15000
+              }
+            ]
+          }
+        ],
+        "entries": [
+          "{@i Choose A or B:} (A) {@item Studded Leather Armor|XPHB}, {@item Scimitar|XPHB}, {@item Shortsword|XPHB}, {@item Longbow|XPHB}, {@item Arrows (20)|XPHB|20 Arrows}, {@item Quiver|XPHB}, {@item Druidic Focus|XPHB} ({@item sprig of mistletoe|XPHB}), {@item Explorer's Pack|XPHB}, and 7 GP; or (B) 150 GP"
+        ]
+      },
+      "multiclassing": {
+        "proficienciesGained": {
+          "weapons": [
+            "martial"
+          ],
+          "armor": [
+            "light",
+            "medium",
+            "shield"
+          ],
+          "skills": [
+            {
+              "choose": {
+                "from": [
+                  "animal handling",
+                  "athletics",
+                  "insight",
+                  "investigation",
+                  "nature",
+                  "perception",
+                  "stealth",
+                  "survival"
+                ],
+                "count": 1
+              }
+            }
+          ]
+        }
+      },
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "Favored Enemy"
+          ],
+          "rows": [
+            [
+              2
+            ],
+            [
+              2
+            ],
+            [
+              2
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              3
+            ],
+            [
+              3
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              6
+            ],
+            [
+              6
+            ],
+            [
+              6
+            ]
+          ]
+        },
+        {
+          "colLabels": [
+            "{@filter Prepared Spells|spells|level=!0|class=Ranger}"
+          ],
+          "rows": [
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              7
+            ],
+            [
+              9
+            ],
+            [
+              9
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              11
+            ],
+            [
+              11
+            ],
+            [
+              12
+            ],
+            [
+              12
+            ],
+            [
+              14
+            ],
+            [
+              14
+            ],
+            [
+              15
+            ],
+            [
+              15
+            ]
+          ]
+        },
+        {
+          "title": "Spell Slots per Spell Level",
+          "colLabels": [
+            "{@filter 1st|spells|level=1|class=ranger}",
+            "{@filter 2nd|spells|level=2|class=ranger}",
+            "{@filter 3rd|spells|level=3|class=ranger}",
+            "{@filter 4th|spells|level=4|class=ranger}",
+            "{@filter 5th|spells|level=5|class=ranger}"
+          ],
+          "rowsSpellProgression": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              2,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              2,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              2,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              2,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "Spellcasting|Ranger|XPHB|1",
+        "Favored Enemy|Ranger|XPHB|1",
+        "Weapon Mastery|Ranger|XPHB|1",
+        "Deft Explorer|Ranger|XPHB|2",
+        "Fighting Style|Ranger|XPHB|2",
+        {
+          "classFeature": "Ranger Subclass|Ranger|XPHB|3",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Ranger|XPHB|4",
+        "Extra Attack|Ranger|XPHB|5",
+        "Roving|Ranger|XPHB|6",
+        {
+          "classFeature": "Subclass Feature|Ranger|XPHB|7",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Ranger|XPHB|8",
+        "Expertise|Ranger|XPHB|9",
+        "Tireless|Ranger|XPHB|10",
+        {
+          "classFeature": "Subclass Feature|Ranger|XPHB|11",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Ranger|XPHB|12",
+        "Relentless Hunter|Ranger|XPHB|13",
+        "Nature's Veil|Ranger|XPHB|14",
+        {
+          "classFeature": "Subclass Feature|Ranger|XPHB|15",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Ranger|XPHB|16",
+        "Precise Hunter|Ranger|XPHB|17",
+        "Feral Senses|Ranger|XPHB|18",
+        "Epic Boon|Ranger|XPHB|19",
+        "Foe Slayer|Ranger|XPHB|20"
+      ],
+      "subclassTitle": "Ranger Subclass"
+    }
+  ],
+  "subclass": [
+    {
+      "name": "Beast Master",
+      "shortName": "Beast Master",
+      "source": "XPHB",
+      "className": "Ranger",
+      "classSource": "XPHB",
+      "subclassFeatures": [
+        "Beast Master|Ranger|XPHB|Beast Master|XPHB|3",
+        "Exceptional Training|Ranger|XPHB|Beast Master|XPHB|7",
+        "Bestial Fury|Ranger|XPHB|Beast Master|XPHB|11",
+        "Share Spells|Ranger|XPHB|Beast Master|XPHB|15"
+      ]
+    },
+    {
+      "name": "Hunter",
+      "shortName": "Hunter",
+      "source": "XPHB",
+      "className": "Ranger",
+      "classSource": "XPHB",
+      "srd52": true,
+      "basicRules2024": true,
+      "subclassFeatures": [
+        "Hunter|Ranger|XPHB|Hunter|XPHB|3",
+        "Defensive Tactics|Ranger|XPHB|Hunter|XPHB|7",
+        "Superior Hunter's Prey|Ranger|XPHB|Hunter|XPHB|11",
+        "Superior Hunter's Defense|Ranger|XPHB|Hunter|XPHB|15"
+      ]
+    },
+    {
+      "name": "Gloom Stalker",
+      "shortName": "Gloom Stalker",
+      "source": "XPHB",
+      "className": "Ranger",
+      "classSource": "XPHB",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "3": [
+              "disguise self|xphb"
+            ],
+            "5": [
+              "rope trick|xphb"
+            ],
+            "9": [
+              "fear|xphb"
+            ],
+            "13": [
+              "greater invisibility|xphb"
+            ],
+            "17": [
+              "seeming|xphb"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Gloom Stalker|Ranger|XPHB|Gloom Stalker|XPHB|3",
+        "Iron Mind|Ranger|XPHB|Gloom Stalker|XPHB|7",
+        "Stalker's Flurry|Ranger|XPHB|Gloom Stalker|XPHB|11",
+        "Shadowy Dodge|Ranger|XPHB|Gloom Stalker|XPHB|15"
+      ]
+    },
+    {
+      "name": "Horizon Walker",
+      "shortName": "Horizon Walker",
+      "source": "XGE",
+      "className": "Ranger",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "known": {
+            "3": [
+              "protection from evil and good"
+            ],
+            "5": [
+              "misty step"
+            ],
+            "9": [
+              "haste"
+            ],
+            "13": [
+              "banishment"
+            ],
+            "17": [
+              "teleportation circle"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Horizon Walker|Ranger||Horizon Walker|XGE|3",
+        "Ethereal Step|Ranger||Horizon Walker|XGE|7",
+        "Distant Strike|Ranger||Horizon Walker|XGE|11",
+        "Spectral Defense|Ranger||Horizon Walker|XGE|15"
+      ]
+    },
+    {
+      "name": "Monster Slayer",
+      "shortName": "Monster Slayer",
+      "source": "XGE",
+      "className": "Ranger",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "known": {
+            "3": [
+              "protection from evil and good"
+            ],
+            "5": [
+              "zone of truth"
+            ],
+            "9": [
+              "magic circle"
+            ],
+            "13": [
+              "banishment"
+            ],
+            "17": [
+              "hold monster"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Monster Slayer|Ranger||Monster Slayer|XGE|3",
+        "Supernatural Defense|Ranger||Monster Slayer|XGE|7",
+        "Magic-User's Nemesis|Ranger||Monster Slayer|XGE|11",
+        "Slayer's Counter|Ranger||Monster Slayer|XGE|15"
+      ]
+    },
+    {
+      "name": "Fey Wanderer",
+      "shortName": "Fey Wanderer",
+      "source": "XPHB",
+      "className": "Ranger",
+      "classSource": "XPHB",
+      "additionalSpells": [
+        {
+          "known": {
+            "3": [
+              "charm person|xphb"
+            ],
+            "5": [
+              "misty step|xphb"
+            ],
+            "9": [
+              "summon fey|xphb"
+            ],
+            "13": [
+              "dimension door|xphb"
+            ],
+            "17": [
+              "mislead|xphb"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Fey Wanderer|Ranger|XPHB|Fey Wanderer|XPHB|3",
+        "Beguiling Twist|Ranger|XPHB|Fey Wanderer|XPHB|7",
+        "Fey Reinforcements|Ranger|XPHB|Fey Wanderer|XPHB|11",
+        "Misty Wanderer|Ranger|XPHB|Fey Wanderer|XPHB|15"
+      ]
+    },
+    {
+      "name": "Swarmkeeper",
+      "shortName": "Swarmkeeper",
+      "source": "TCE",
+      "className": "Ranger",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "known": {
+            "3": [
+              "mage hand#c",
+              "faerie fire"
+            ],
+            "5": [
+              "web"
+            ],
+            "9": [
+              "gaseous form"
+            ],
+            "13": [
+              "arcane eye"
+            ],
+            "17": [
+              "insect plague"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Swarmkeeper|Ranger||Swarmkeeper|TCE|3",
+        "Writhing Tide|Ranger||Swarmkeeper|TCE|7",
+        "Mighty Swarm|Ranger||Swarmkeeper|TCE|11",
+        "Swarming Dispersal|Ranger||Swarmkeeper|TCE|15"
+      ]
+    },
+    {
+      "name": "Drakewarden",
+      "shortName": "Drakewarden",
+      "source": "FTD",
+      "className": "Ranger",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "known": {
+            "3": [
+              "thaumaturgy#c"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Drakewarden|Ranger||Drakewarden|FTD|3",
+        "Bond of Fang and Scale|Ranger||Drakewarden|FTD|7",
+        "Drake's Breath|Ranger||Drakewarden|FTD|11",
+        "Perfected Bond|Ranger||Drakewarden|FTD|15"
+      ]
+    }
+  ]
+}

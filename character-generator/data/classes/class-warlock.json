@@ -1,0 +1,863 @@
+{
+  "class": [
+    {
+      "name": "Warlock",
+      "source": "XPHB",
+      "srd52": true,
+      "basicRules2024": true,
+      "primaryAbility": [
+        {
+          "cha": true
+        }
+      ],
+      "hd": {
+        "number": 1,
+        "faces": 8
+      },
+      "proficiency": [
+        "wis",
+        "cha"
+      ],
+      "spellcastingAbility": "cha",
+      "casterProgression": "pact",
+      "preparedSpellsProgression": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        10,
+        11,
+        11,
+        12,
+        12,
+        13,
+        13,
+        14,
+        14,
+        15,
+        15
+      ],
+      "preparedSpellsChange": "level",
+      "cantripProgression": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "spellsKnownProgressionFixedByLevel": {
+        "11": {
+          "6": 1
+        },
+        "13": {
+          "7": 1
+        },
+        "15": {
+          "8": 1
+        },
+        "17": {
+          "9": 1
+        }
+      },
+      "additionalSpells": [
+        {
+          "prepared": {
+            "9": [
+              "contact other plane|xphb"
+            ]
+          }
+        }
+      ],
+      "featProgression": [
+        {
+          "name": "Epic Boon",
+          "category": [
+            "EB"
+          ],
+          "progression": {
+            "19": 1
+          }
+        }
+      ],
+      "optionalfeatureProgression": [
+        {
+          "name": "Eldritch Invocations",
+          "featureType": [
+            "EI"
+          ],
+          "progression": [
+            1,
+            3,
+            3,
+            3,
+            5,
+            5,
+            6,
+            6,
+            7,
+            7,
+            7,
+            8,
+            8,
+            8,
+            9,
+            9,
+            9,
+            10,
+            10,
+            10
+          ]
+        }
+      ],
+      "startingProficiencies": {
+        "armor": [
+          "light"
+        ],
+        "weapons": [
+          "simple"
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "arcana",
+                "deception",
+                "history",
+                "intimidation",
+                "investigation",
+                "nature",
+                "religion"
+              ],
+              "count": 2
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "defaultData": [
+          {
+            "A": [
+              {
+                "item": "leather armor|xphb"
+              },
+              {
+                "item": "sickle|xphb"
+              },
+              {
+                "item": "dagger|xphb",
+                "quantity": 2
+              },
+              {
+                "item": "orb|xphb"
+              },
+              {
+                "item": "book|xphb"
+              },
+              {
+                "item": "scholar's pack|xphb"
+              },
+              {
+                "value": 1500
+              }
+            ],
+            "B": [
+              {
+                "value": 10000
+              }
+            ]
+          }
+        ],
+        "entries": [
+          "{@i Choose A or B:} (A) {@item Leather Armor|XPHB}, {@item Sickle|XPHB}, 2 {@item Dagger|XPHB|Daggers}, {@item Arcane Focus|XPHB} ({@item orb|XPHB}), {@item Book|XPHB} (occult lore), {@item Scholar's Pack|XPHB}, and 15 GP; or (B) 100 GP"
+        ]
+      },
+      "multiclassing": {
+        "proficienciesGained": {
+          "armor": [
+            "light"
+          ]
+        }
+      },
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "{@filter Invocations|optionalfeatures|feature type=ei}",
+            "{@filter Cantrips|spells|level=0|class=Warlock}",
+            "{@filter Prepared Spells|spells|level=!0|class=Warlock}",
+            "Spell Slots",
+            "Slot Level"
+          ],
+          "rows": [
+            [
+              1,
+              2,
+              2,
+              1,
+              1
+            ],
+            [
+              3,
+              2,
+              3,
+              2,
+              1
+            ],
+            [
+              3,
+              2,
+              4,
+              2,
+              2
+            ],
+            [
+              3,
+              3,
+              5,
+              2,
+              2
+            ],
+            [
+              5,
+              3,
+              6,
+              2,
+              3
+            ],
+            [
+              5,
+              3,
+              7,
+              2,
+              3
+            ],
+            [
+              6,
+              3,
+              8,
+              2,
+              4
+            ],
+            [
+              6,
+              3,
+              9,
+              2,
+              4
+            ],
+            [
+              7,
+              3,
+              10,
+              2,
+              5
+            ],
+            [
+              7,
+              4,
+              10,
+              2,
+              5
+            ],
+            [
+              7,
+              4,
+              11,
+              3,
+              5
+            ],
+            [
+              8,
+              4,
+              11,
+              3,
+              5
+            ],
+            [
+              8,
+              4,
+              12,
+              3,
+              5
+            ],
+            [
+              8,
+              4,
+              12,
+              3,
+              5
+            ],
+            [
+              9,
+              4,
+              13,
+              3,
+              5
+            ],
+            [
+              9,
+              4,
+              13,
+              3,
+              5
+            ],
+            [
+              9,
+              4,
+              14,
+              4,
+              5
+            ],
+            [
+              10,
+              4,
+              14,
+              4,
+              5
+            ],
+            [
+              10,
+              4,
+              15,
+              4,
+              5
+            ],
+            [
+              10,
+              4,
+              15,
+              4,
+              5
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "Eldritch Invocations|Warlock|XPHB|1",
+        "Pact Magic|Warlock|XPHB|1",
+        "Eldritch Invocation Options|Warlock|XPHB|1",
+        "Magical Cunning|Warlock|XPHB|2",
+        {
+          "classFeature": "Warlock Subclass|Warlock|XPHB|3",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Warlock|XPHB|4",
+        {
+          "classFeature": "Subclass Feature|Warlock|XPHB|6",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Warlock|XPHB|8",
+        "Contact Patron|Warlock|XPHB|9",
+        {
+          "classFeature": "Subclass Feature|Warlock|XPHB|10",
+          "gainSubclassFeature": true
+        },
+        "Mystic Arcanum|Warlock|XPHB|11",
+        "Ability Score Improvement|Warlock|XPHB|12",
+        "Mystic Arcanum|Warlock|XPHB|13",
+        {
+          "classFeature": "Subclass Feature|Warlock|XPHB|14",
+          "gainSubclassFeature": true
+        },
+        "Mystic Arcanum|Warlock|XPHB|15",
+        "Ability Score Improvement|Warlock|XPHB|16",
+        "Mystic Arcanum|Warlock|XPHB|17",
+        "Epic Boon|Warlock|XPHB|19",
+        "Eldritch Master|Warlock|XPHB|20"
+      ],
+      "subclassTitle": "Warlock Subclass"
+    }
+  ],
+  "subclass": [
+    {
+      "name": "Archfey Patron",
+      "shortName": "Archfey",
+      "source": "XPHB",
+      "className": "Warlock",
+      "classSource": "XPHB",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "3": [
+              "calm emotions|xphb",
+              "faerie fire|xphb",
+              "misty step|xphb",
+              "phantasmal force|xphb",
+              "sleep|xphb"
+            ],
+            "5": [
+              "blink|xphb",
+              "plant growth|xphb"
+            ],
+            "7": [
+              "dominate beast|xphb",
+              "greater invisibility|xphb"
+            ],
+            "9": [
+              "dominate person|xphb",
+              "seeming|xphb"
+            ]
+          },
+          "innate": {
+            "_": {
+              "daily": {
+                "1e": [
+                  "misty step|xphb"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Archfey Patron|Warlock|XPHB|Archfey|XPHB|3",
+        "Misty Escape|Warlock|XPHB|Archfey|XPHB|6",
+        "Beguiling Defenses|Warlock|XPHB|Archfey|XPHB|10",
+        "Bewitching Magic|Warlock|XPHB|Archfey|XPHB|14"
+      ]
+    },
+    {
+      "name": "Fiend Patron",
+      "shortName": "Fiend",
+      "source": "XPHB",
+      "className": "Warlock",
+      "classSource": "XPHB",
+      "srd52": true,
+      "basicRules2024": true,
+      "additionalSpells": [
+        {
+          "prepared": {
+            "3": [
+              "burning hands|xphb",
+              "command|xphb",
+              "scorching ray|xphb",
+              "suggestion|xphb"
+            ],
+            "5": [
+              "fireball|xphb",
+              "stinking cloud|xphb"
+            ],
+            "7": [
+              "fire shield|xphb",
+              "wall of fire|xphb"
+            ],
+            "9": [
+              "geas|xphb",
+              "insect plague|xphb"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Fiend Patron|Warlock|XPHB|Fiend|XPHB|3",
+        "Dark One's Own Luck|Warlock|XPHB|Fiend|XPHB|6",
+        "Fiendish Resilience|Warlock|XPHB|Fiend|XPHB|10",
+        "Hurl Through Hell|Warlock|XPHB|Fiend|XPHB|14"
+      ]
+    },
+    {
+      "name": "Great Old One Patron",
+      "shortName": "Great Old One",
+      "source": "XPHB",
+      "className": "Warlock",
+      "classSource": "XPHB",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "3": [
+              "detect thoughts|xphb",
+              "dissonant whispers|xphb",
+              "phantasmal force|xphb",
+              "tasha's hideous laughter|xphb"
+            ],
+            "5": [
+              "clairvoyance|xphb",
+              "hunger of hadar|xphb"
+            ],
+            "7": [
+              "confusion|xphb",
+              "summon aberration|xphb"
+            ],
+            "9": [
+              "modify memory|xphb",
+              "telekinesis|xphb"
+            ]
+          },
+          "innate": {
+            "10": [
+              "hex|xphb"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Great Old One Patron|Warlock|XPHB|Great Old One|XPHB|3",
+        "Clairvoyant Combatant|Warlock|XPHB|Great Old One|XPHB|6",
+        "Eldritch Hex|Warlock|XPHB|Great Old One|XPHB|10",
+        "Thought Shield|Warlock|XPHB|Great Old One|XPHB|10",
+        "Create Thrall|Warlock|XPHB|Great Old One|XPHB|14"
+      ]
+    },
+    {
+      "name": "The Undying",
+      "shortName": "Undying",
+      "source": "SCAG",
+      "className": "Warlock",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "known": {
+            "1": [
+              "spare the dying#c"
+            ]
+          },
+          "expanded": {
+            "s1": [
+              "false life",
+              "ray of sickness"
+            ],
+            "s2": [
+              "blindness/deafness",
+              "silence"
+            ],
+            "s3": [
+              "feign death",
+              "speak with dead"
+            ],
+            "s4": [
+              "aura of life",
+              "death ward"
+            ],
+            "s5": [
+              "contagion",
+              "legend lore"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "The Undying|Warlock||Undying|SCAG|1",
+        "Defy Death|Warlock||Undying|SCAG|6",
+        "Undying Nature|Warlock||Undying|SCAG|10",
+        "Indestructible Life|Warlock||Undying|SCAG|14"
+      ]
+    },
+    {
+      "name": "Celestial Patron",
+      "shortName": "Celestial",
+      "source": "XPHB",
+      "className": "Warlock",
+      "classSource": "XPHB",
+      "additionalSpells": [
+        {
+          "known": {
+            "1": [
+              "sacred flame|xphb#c",
+              "light|xphb#c"
+            ]
+          },
+          "prepared": {
+            "3": [
+              "aid|xphb",
+              "cure wounds|xphb",
+              "guiding bolt|xphb",
+              "lesser restoration|xphb"
+            ],
+            "5": [
+              "daylight|xphb",
+              "revivify|xphb"
+            ],
+            "7": [
+              "guardian of faith|xphb",
+              "wall of fire|xphb"
+            ],
+            "9": [
+              "greater restoration|xphb",
+              "summon celestial|xphb"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Celestial Patron|Warlock|XPHB|Celestial|XPHB|3",
+        "Radiant Soul|Warlock|XPHB|Celestial|XPHB|6",
+        "Celestial Resilience|Warlock|XPHB|Celestial|XPHB|10",
+        "Searing Vengeance|Warlock|XPHB|Celestial|XPHB|14"
+      ]
+    },
+    {
+      "name": "The Hexblade",
+      "shortName": "Hexblade",
+      "source": "XGE",
+      "className": "Warlock",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "expanded": {
+            "s1": [
+              "shield",
+              "wrathful smite"
+            ],
+            "s2": [
+              "blur",
+              "branding smite"
+            ],
+            "s3": [
+              "blink",
+              "elemental weapon"
+            ],
+            "s4": [
+              "phantasmal killer",
+              "staggering smite"
+            ],
+            "s5": [
+              "banishing smite",
+              "cone of cold"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "The Hexblade|Warlock||Hexblade|XGE|1",
+        "Accursed Specter|Warlock||Hexblade|XGE|6",
+        "Armor of Hexes|Warlock||Hexblade|XGE|10",
+        "Master of Hexes|Warlock||Hexblade|XGE|14"
+      ]
+    },
+    {
+      "name": "The Fathomless",
+      "shortName": "Fathomless",
+      "source": "TCE",
+      "className": "Warlock",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "expanded": {
+            "s1": [
+              "create or destroy water",
+              "thunderwave"
+            ],
+            "s2": [
+              "gust of wind",
+              "silence"
+            ],
+            "s3": [
+              "lightning bolt",
+              "sleet storm"
+            ],
+            "s4": [
+              "control water",
+              "summon elemental|tce"
+            ],
+            "s5": [
+              "Bigby's hand",
+              "cone of cold"
+            ]
+          },
+          "known": {
+            "10": {
+              "daily": {
+                "1": [
+                  "Evard's black tentacles"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "The Fathomless|Warlock||Fathomless|TCE|1",
+        "Oceanic Soul|Warlock||Fathomless|TCE|6",
+        "Guardian Coil|Warlock||Fathomless|TCE|6",
+        "Grasping Tentacles|Warlock||Fathomless|TCE|10",
+        "Fathomless Plunge|Warlock||Fathomless|TCE|14"
+      ]
+    },
+    {
+      "name": "The Genie",
+      "shortName": "Genie",
+      "source": "TCE",
+      "className": "Warlock",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "name": "Dao",
+          "expanded": {
+            "9": [
+              "wish"
+            ],
+            "s1": [
+              "detect evil and good",
+              "sanctuary"
+            ],
+            "s2": [
+              "phantasmal force",
+              "spike growth"
+            ],
+            "s3": [
+              "create food and water",
+              "meld into stone"
+            ],
+            "s4": [
+              "phantasmal killer",
+              "stone shape"
+            ],
+            "s5": [
+              "creation",
+              "wall of stone"
+            ]
+          }
+        },
+        {
+          "name": "Djinni",
+          "expanded": {
+            "9": [
+              "wish"
+            ],
+            "s1": [
+              "detect evil and good",
+              "thunderwave"
+            ],
+            "s2": [
+              "phantasmal force",
+              "gust of wind"
+            ],
+            "s3": [
+              "create food and water",
+              "wind wall"
+            ],
+            "s4": [
+              "phantasmal killer",
+              "greater invisibility"
+            ],
+            "s5": [
+              "creation",
+              "seeming"
+            ]
+          }
+        },
+        {
+          "name": "Efreeti",
+          "expanded": {
+            "9": [
+              "wish"
+            ],
+            "s1": [
+              "detect evil and good",
+              "burning hands"
+            ],
+            "s2": [
+              "phantasmal force",
+              "scorching ray"
+            ],
+            "s3": [
+              "create food and water",
+              "fireball"
+            ],
+            "s4": [
+              "phantasmal killer",
+              "fire shield"
+            ],
+            "s5": [
+              "creation",
+              "flame strike"
+            ]
+          }
+        },
+        {
+          "name": "Marid",
+          "expanded": {
+            "9": [
+              "wish"
+            ],
+            "s1": [
+              "detect evil and good",
+              "fog cloud"
+            ],
+            "s2": [
+              "phantasmal force",
+              "blur"
+            ],
+            "s3": [
+              "create food and water",
+              "sleet storm"
+            ],
+            "s4": [
+              "phantasmal killer",
+              "control water"
+            ],
+            "s5": [
+              "creation",
+              "cone of cold"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "The Genie|Warlock||Genie|TCE|1",
+        "Elemental Gift|Warlock||Genie|TCE|6",
+        "Sanctuary Vessel|Warlock||Genie|TCE|10",
+        "Limited Wish|Warlock||Genie|TCE|14"
+      ]
+    },
+    {
+      "name": "The Undead",
+      "shortName": "Undead",
+      "source": "VRGR",
+      "className": "Warlock",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "expanded": {
+            "s1": [
+              "bane",
+              "false life"
+            ],
+            "s2": [
+              "blindness/deafness",
+              "phantasmal force"
+            ],
+            "s3": [
+              "phantom steed",
+              "speak with dead"
+            ],
+            "s4": [
+              "death ward",
+              "greater invisibility"
+            ],
+            "s5": [
+              "antilife shell",
+              "cloudkill"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "The Undead|Warlock||Undead|VRGR|1",
+        "Grave Touched|Warlock||Undead|VRGR|6",
+        "Necrotic Husk|Warlock||Undead|VRGR|10",
+        "Spirit Projection|Warlock||Undead|VRGR|14"
+      ]
+    }
+  ]
+}

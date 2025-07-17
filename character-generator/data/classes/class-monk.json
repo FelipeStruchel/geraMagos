@@ -1,0 +1,734 @@
+{
+  "class": [
+    {
+      "name": "Monk",
+      "source": "XPHB",
+      "srd52": true,
+      "basicRules2024": true,
+      "primaryAbility": [
+        {
+          "dex": true,
+          "wis": true
+        }
+      ],
+      "hd": {
+        "number": 1,
+        "faces": 8
+      },
+      "proficiency": [
+        "str",
+        "dex"
+      ],
+      "featProgression": [
+        {
+          "name": "Epic Boon",
+          "category": [
+            "EB"
+          ],
+          "progression": {
+            "19": 1
+          }
+        }
+      ],
+      "startingProficiencies": {
+        "weapons": [
+          "simple",
+          "Martial weapons that have the {@filter Light|items|type=martial weapon|property=light} property"
+        ],
+        "weaponProficiencies": [
+          {
+            "simple": true,
+            "all": {
+              "fromFilter": "type=martial weapon|property=light"
+            }
+          }
+        ],
+        "tools": [
+          "Choose one type of {@item Artisan's Tools|XPHB} or {@item Musical Instrument|XPHB}"
+        ],
+        "toolProficiencies": [
+          {
+            "anyArtisansTool": 1
+          },
+          {
+            "anyMusicalInstrument": 1
+          }
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "acrobatics",
+                "athletics",
+                "history",
+                "insight",
+                "religion",
+                "stealth"
+              ],
+              "count": 2
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "defaultData": [
+          {
+            "A": [
+              {
+                "item": "spear|xphb"
+              },
+              {
+                "item": "dagger|xphb",
+                "quantity": 5
+              },
+              {
+                "equipmentTypes": [
+                  "instrumentMusical",
+                  "toolArtisan"
+                ]
+              },
+              {
+                "item": "explorer's pack|xphb"
+              },
+              {
+                "value": 1100
+              }
+            ],
+            "B": [
+              {
+                "value": 5000
+              }
+            ]
+          }
+        ],
+        "entries": [
+          "{@i Choose A or B:} (A) {@item Spear|XPHB}, 5 {@item Dagger|XPHB|Daggers}, {@item Artisan's Tools|XPHB} or {@item Musical Instrument|XPHB} chosen for the tool proficiency above, {@item Explorer's Pack|XPHB}, and 11 GP; or (B) 50 GP"
+        ]
+      },
+      "multiclassing": {},
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "Martial Arts",
+            "Focus Points",
+            "Unarmored Movement"
+          ],
+          "rows": [
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 1,
+                    "faces": 6
+                  }
+                ],
+                "rollable": true
+              },
+              0,
+              {
+                "type": "bonusSpeed",
+                "value": 0
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 1,
+                    "faces": 6
+                  }
+                ],
+                "rollable": true
+              },
+              2,
+              {
+                "type": "bonusSpeed",
+                "value": 10
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 1,
+                    "faces": 6
+                  }
+                ],
+                "rollable": true
+              },
+              3,
+              {
+                "type": "bonusSpeed",
+                "value": 10
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 1,
+                    "faces": 6
+                  }
+                ],
+                "rollable": true
+              },
+              4,
+              {
+                "type": "bonusSpeed",
+                "value": 10
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 1,
+                    "faces": 8
+                  }
+                ],
+                "rollable": true
+              },
+              5,
+              {
+                "type": "bonusSpeed",
+                "value": 10
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 1,
+                    "faces": 8
+                  }
+                ],
+                "rollable": true
+              },
+              6,
+              {
+                "type": "bonusSpeed",
+                "value": 15
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 1,
+                    "faces": 8
+                  }
+                ],
+                "rollable": true
+              },
+              7,
+              {
+                "type": "bonusSpeed",
+                "value": 15
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 1,
+                    "faces": 8
+                  }
+                ],
+                "rollable": true
+              },
+              8,
+              {
+                "type": "bonusSpeed",
+                "value": 15
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 1,
+                    "faces": 8
+                  }
+                ],
+                "rollable": true
+              },
+              9,
+              {
+                "type": "bonusSpeed",
+                "value": 15
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 1,
+                    "faces": 8
+                  }
+                ],
+                "rollable": true
+              },
+              10,
+              {
+                "type": "bonusSpeed",
+                "value": 20
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 1,
+                    "faces": 10
+                  }
+                ],
+                "rollable": true
+              },
+              11,
+              {
+                "type": "bonusSpeed",
+                "value": 20
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 1,
+                    "faces": 10
+                  }
+                ],
+                "rollable": true
+              },
+              12,
+              {
+                "type": "bonusSpeed",
+                "value": 20
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 1,
+                    "faces": 10
+                  }
+                ],
+                "rollable": true
+              },
+              13,
+              {
+                "type": "bonusSpeed",
+                "value": 20
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 1,
+                    "faces": 10
+                  }
+                ],
+                "rollable": true
+              },
+              14,
+              {
+                "type": "bonusSpeed",
+                "value": 25
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 1,
+                    "faces": 10
+                  }
+                ],
+                "rollable": true
+              },
+              15,
+              {
+                "type": "bonusSpeed",
+                "value": 25
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 1,
+                    "faces": 10
+                  }
+                ],
+                "rollable": true
+              },
+              16,
+              {
+                "type": "bonusSpeed",
+                "value": 25
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 1,
+                    "faces": 12
+                  }
+                ],
+                "rollable": true
+              },
+              17,
+              {
+                "type": "bonusSpeed",
+                "value": 25
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 1,
+                    "faces": 12
+                  }
+                ],
+                "rollable": true
+              },
+              18,
+              {
+                "type": "bonusSpeed",
+                "value": 30
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 1,
+                    "faces": 12
+                  }
+                ],
+                "rollable": true
+              },
+              19,
+              {
+                "type": "bonusSpeed",
+                "value": 30
+              }
+            ],
+            [
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 1,
+                    "faces": 12
+                  }
+                ],
+                "rollable": true
+              },
+              20,
+              {
+                "type": "bonusSpeed",
+                "value": 30
+              }
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "Martial Arts|Monk|XPHB|1",
+        "Unarmored Defense|Monk|XPHB|1",
+        "Monk's Focus|Monk|XPHB|2",
+        "Unarmored Movement|Monk|XPHB|2",
+        "Uncanny Metabolism|Monk|XPHB|2",
+        "Deflect Attacks|Monk|XPHB|3",
+        {
+          "classFeature": "Monk Subclass|Monk|XPHB|3",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Monk|XPHB|4",
+        "Slow Fall|Monk|XPHB|4",
+        "Extra Attack|Monk|XPHB|5",
+        "Stunning Strike|Monk|XPHB|5",
+        "Empowered Strikes|Monk|XPHB|6",
+        {
+          "classFeature": "Subclass Feature|Monk|XPHB|6",
+          "gainSubclassFeature": true
+        },
+        "Evasion|Monk|XPHB|7",
+        "Ability Score Improvement|Monk|XPHB|8",
+        "Acrobatic Movement|Monk|XPHB|9",
+        "Heightened Focus|Monk|XPHB|10",
+        "Self-Restoration|Monk|XPHB|10",
+        {
+          "classFeature": "Subclass Feature|Monk|XPHB|11",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Monk|XPHB|12",
+        "Deflect Energy|Monk|XPHB|13",
+        "Disciplined Survivor|Monk|XPHB|14",
+        "Perfect Focus|Monk|XPHB|15",
+        "Ability Score Improvement|Monk|XPHB|16",
+        {
+          "classFeature": "Subclass Feature|Monk|XPHB|17",
+          "gainSubclassFeature": true
+        },
+        "Superior Defense|Monk|XPHB|18",
+        "Epic Boon|Monk|XPHB|19",
+        "Body and Mind|Monk|XPHB|20"
+      ],
+      "subclassTitle": "Monk Subclass"
+    }
+  ],
+  "subclass": [
+    {
+      "name": "Warrior of Shadow",
+      "shortName": "Shadow",
+      "source": "XPHB",
+      "className": "Monk",
+      "classSource": "XPHB",
+      "additionalSpells": [
+        {
+          "known": {
+            "3": [
+              "minor illusion|xphb#c"
+            ]
+          },
+          "innate": {
+            "3": {
+              "resource": {
+                "1": [
+                  "darkness|xphb"
+                ]
+              }
+            }
+          },
+          "resourceName": "Focus Point",
+          "ability": "wis"
+        }
+      ],
+      "subclassFeatures": [
+        "Warrior of Shadow|Monk|XPHB|Shadow|XPHB|3",
+        "Shadow Step|Monk|XPHB|Shadow|XPHB|6",
+        "Improved Shadow Step|Monk|XPHB|Shadow|XPHB|11",
+        "Cloak of Shadows|Monk|XPHB|Shadow|XPHB|17"
+      ]
+    },
+    {
+      "name": "Way of the Four Elements",
+      "shortName": "Four Elements",
+      "source": "PHB",
+      "className": "Monk",
+      "classSource": "PHB",
+      "spellcastingAbility": "wis",
+      "optionalfeatureProgression": [
+        {
+          "name": "Elemental Disciplines",
+          "featureType": [
+            "ED"
+          ],
+          "progression": {
+            "3": 2,
+            "6": 3,
+            "11": 4,
+            "17": 5
+          },
+          "required": {
+            "3": [
+              "Elemental Attunement|PHB"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Way of the Four Elements|Monk||Four Elements||3",
+        "Extra Elemental Discipline|Monk||Four Elements||6",
+        "Extra Elemental Discipline|Monk||Four Elements||11",
+        "Extra Elemental Discipline|Monk||Four Elements||17"
+      ]
+    },
+    {
+      "name": "Warrior of the Open Hand",
+      "shortName": "Open Hand",
+      "source": "XPHB",
+      "className": "Monk",
+      "classSource": "XPHB",
+      "srd52": true,
+      "basicRules2024": true,
+      "subclassFeatures": [
+        "Warrior of the Open Hand|Monk|XPHB|Open Hand|XPHB|3",
+        "Wholeness of Body|Monk|XPHB|Open Hand|XPHB|6",
+        "Fleet Step|Monk|XPHB|Open Hand|XPHB|11",
+        "Quivering Palm|Monk|XPHB|Open Hand|XPHB|17"
+      ]
+    },
+    {
+      "name": "Way of the Long Death",
+      "shortName": "Long Death",
+      "source": "SCAG",
+      "className": "Monk",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Way of the Long Death|Monk||Long Death|SCAG|3",
+        "Hour of Reaping|Monk||Long Death|SCAG|6",
+        "Mastery of Death|Monk||Long Death|SCAG|11",
+        "Touch of the Long Death|Monk||Long Death|SCAG|17"
+      ]
+    },
+    {
+      "name": "Way of the Drunken Master",
+      "shortName": "Drunken Master",
+      "source": "XGE",
+      "className": "Monk",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Way of the Drunken Master|Monk||Drunken Master|XGE|3",
+        "Tipsy Sway|Monk||Drunken Master|XGE|6",
+        "Drunkard's Luck|Monk||Drunken Master|XGE|11",
+        "Intoxicated Frenzy|Monk||Drunken Master|XGE|17"
+      ]
+    },
+    {
+      "name": "Way of the Kensei",
+      "shortName": "Kensei",
+      "source": "XGE",
+      "className": "Monk",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Way of the Kensei|Monk||Kensei|XGE|3",
+        "One with the Blade|Monk||Kensei|XGE|6",
+        "Sharpen the Blade|Monk||Kensei|XGE|11",
+        "Unerring Accuracy|Monk||Kensei|XGE|17"
+      ]
+    },
+    {
+      "name": "Way of the Sun Soul",
+      "shortName": "Sun Soul",
+      "source": "XGE",
+      "className": "Monk",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "innate": {
+            "6": {
+              "resource": {
+                "2": [
+                  "burning hands"
+                ]
+              }
+            }
+          },
+          "resourceName": "Ki",
+          "ability": "wis"
+        }
+      ],
+      "subclassFeatures": [
+        "Way of the Sun Soul|Monk||Sun Soul|XGE|3",
+        "Searing Arc Strike|Monk||Sun Soul|XGE|6",
+        "Searing Sunburst|Monk||Sun Soul|XGE|11",
+        "Sun Shield|Monk||Sun Soul|XGE|17"
+      ]
+    },
+    {
+      "name": "Warrior of Mercy",
+      "shortName": "Mercy",
+      "source": "XPHB",
+      "className": "Monk",
+      "classSource": "XPHB",
+      "subclassFeatures": [
+        "Warrior of Mercy|Monk|XPHB|Mercy|XPHB|3",
+        "Physician's Touch|Monk|XPHB|Mercy|XPHB|6",
+        "Flurry of Healing and Harm|Monk|XPHB|Mercy|XPHB|11",
+        "Hand of Ultimate Mercy|Monk|XPHB|Mercy|XPHB|17"
+      ]
+    },
+    {
+      "name": "Way of the Astral Self",
+      "shortName": "Astral Self",
+      "source": "TCE",
+      "className": "Monk",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Way of the Astral Self|Monk||Astral Self|TCE|3",
+        "Visage of the Astral Self|Monk||Astral Self|TCE|6",
+        "Body of the Astral Self|Monk||Astral Self|TCE|11",
+        "Awakened Astral Self|Monk||Astral Self|TCE|17"
+      ]
+    },
+    {
+      "name": "Way of the Ascendant Dragon",
+      "shortName": "Ascendant Dragon",
+      "source": "FTD",
+      "className": "Monk",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Way of the Ascendant Dragon|Monk||Ascendant Dragon|FTD|3",
+        "Wings Unfurled|Monk||Ascendant Dragon|FTD|6",
+        "Aspect of the Wyrm|Monk||Ascendant Dragon|FTD|11",
+        "Ascendant Aspect|Monk||Ascendant Dragon|FTD|17"
+      ]
+    },
+    {
+      "name": "Way of the Cobalt Soul",
+      "shortName": "Cobalt Soul",
+      "source": "TDCSR",
+      "className": "Monk",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Way of the Cobalt Soul|Monk|PHB|Cobalt Soul|TDCSR|3",
+        "Extort Truth|Monk|PHB|Cobalt Soul|TDCSR|6",
+        "Mystical Erudition|Monk|PHB|Cobalt Soul|TDCSR|6",
+        "Mystical Erudition (11th Level)|Monk|PHB|Cobalt Soul|TDCSR|11",
+        "Mystical Erudition (17th Level)|Monk|PHB|Cobalt Soul|TDCSR|17",
+        "Mind of Mercury|Monk|PHB|Cobalt Soul|TDCSR|11",
+        "Debilitating Barrage|Monk|PHB|Cobalt Soul|TDCSR|17"
+      ]
+    },
+    {
+      "name": "Warrior of the Elements",
+      "shortName": "Elements",
+      "source": "XPHB",
+      "className": "Monk",
+      "classSource": "XPHB",
+      "additionalSpells": [
+        {
+          "known": {
+            "3": [
+              "elementalism|xphb#c"
+            ]
+          },
+          "ability": "wis"
+        }
+      ],
+      "subclassFeatures": [
+        "Warrior of the Elements|Monk|XPHB|Elements|XPHB|3",
+        "Elemental Burst|Monk|XPHB|Elements|XPHB|6",
+        "Stride of the Elements|Monk|XPHB|Elements|XPHB|11",
+        "Elemental Epitome|Monk|XPHB|Elements|XPHB|17"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1428 @@
+{
+  "class": [
+    {
+      "name": "Cleric",
+      "source": "XPHB",
+      "srd52": true,
+      "basicRules2024": true,
+      "primaryAbility": [
+        {
+          "wis": true
+        }
+      ],
+      "hd": {
+        "number": 1,
+        "faces": 8
+      },
+      "proficiency": [
+        "wis",
+        "cha"
+      ],
+      "spellcastingAbility": "wis",
+      "casterProgression": "full",
+      "preparedSpellsProgression": [
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        16,
+        16,
+        17,
+        17,
+        18,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "preparedSpellsChange": "restLong",
+      "cantripProgression": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "featProgression": [
+        {
+          "name": "Epic Boon",
+          "category": [
+            "EB"
+          ],
+          "progression": {
+            "19": 1
+          }
+        }
+      ],
+      "startingProficiencies": {
+        "armor": [
+          "light",
+          "medium",
+          "shield"
+        ],
+        "weapons": [
+          "simple"
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "history",
+                "insight",
+                "medicine",
+                "persuasion",
+                "religion"
+              ],
+              "count": 2
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "defaultData": [
+          {
+            "A": [
+              {
+                "item": "chain shirt|xphb"
+              },
+              {
+                "item": "shield|xphb"
+              },
+              {
+                "item": "mace|xphb"
+              },
+              {
+                "item": "holy symbol|xphb"
+              },
+              {
+                "item": "priest's pack|xphb"
+              },
+              {
+                "value": 7000
+              }
+            ],
+            "B": [
+              {
+                "value": 11000
+              }
+            ]
+          }
+        ],
+        "entries": [
+          "{@i Choose A or B:} (A) {@item Chain Shirt|XPHB}, {@item Shield|XPHB}, {@item Mace|XPHB}, {@item Holy Symbol|XPHB}, {@item Priest's Pack|XPHB}, 7 GP; or (B) 110 GP"
+        ]
+      },
+      "multiclassing": {
+        "proficienciesGained": {
+          "armor": [
+            "light",
+            "medium",
+            "shield"
+          ]
+        }
+      },
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "Channel Divinity",
+            "{@filter Cantrips|spells|level=0|class=Cleric}",
+            "{@filter Prepared Spells|spells|level=!0|class=Cleric}"
+          ],
+          "rows": [
+            [
+              0,
+              3,
+              4
+            ],
+            [
+              2,
+              3,
+              5
+            ],
+            [
+              2,
+              3,
+              6
+            ],
+            [
+              2,
+              4,
+              7
+            ],
+            [
+              2,
+              4,
+              9
+            ],
+            [
+              3,
+              4,
+              10
+            ],
+            [
+              3,
+              4,
+              11
+            ],
+            [
+              3,
+              4,
+              12
+            ],
+            [
+              3,
+              4,
+              14
+            ],
+            [
+              3,
+              5,
+              15
+            ],
+            [
+              3,
+              5,
+              16
+            ],
+            [
+              3,
+              5,
+              16
+            ],
+            [
+              3,
+              5,
+              17
+            ],
+            [
+              3,
+              5,
+              17
+            ],
+            [
+              3,
+              5,
+              18
+            ],
+            [
+              3,
+              5,
+              18
+            ],
+            [
+              3,
+              5,
+              19
+            ],
+            [
+              4,
+              5,
+              20
+            ],
+            [
+              4,
+              5,
+              21
+            ],
+            [
+              4,
+              5,
+              22
+            ]
+          ]
+        },
+        {
+          "title": "Spell Slots per Spell Level",
+          "colLabels": [
+            "{@filter 1st|spells|level=1|class=Cleric}",
+            "{@filter 2nd|spells|level=2|class=Cleric}",
+            "{@filter 3rd|spells|level=3|class=Cleric}",
+            "{@filter 4th|spells|level=4|class=Cleric}",
+            "{@filter 5th|spells|level=5|class=Cleric}",
+            "{@filter 6th|spells|level=6|class=Cleric}",
+            "{@filter 7th|spells|level=7|class=Cleric}",
+            "{@filter 8th|spells|level=8|class=Cleric}",
+            "{@filter 9th|spells|level=9|class=Cleric}"
+          ],
+          "rowsSpellProgression": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              2,
+              2,
+              1,
+              1
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "Spellcasting|Cleric|XPHB|1",
+        "Divine Order|Cleric|XPHB|1",
+        "Channel Divinity|Cleric|XPHB|2",
+        {
+          "classFeature": "Cleric Subclass|Cleric|XPHB|3",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Cleric|XPHB|4",
+        "Sear Undead|Cleric|XPHB|5",
+        {
+          "classFeature": "Subclass Feature|Cleric|XPHB|6",
+          "gainSubclassFeature": true
+        },
+        "Blessed Strikes|Cleric|XPHB|7",
+        "Ability Score Improvement|Cleric|XPHB|8",
+        "Divine Intervention|Cleric|XPHB|10",
+        "Ability Score Improvement|Cleric|XPHB|12",
+        "Improved Blessed Strikes|Cleric|XPHB|14",
+        "Ability Score Improvement|Cleric|XPHB|16",
+        {
+          "classFeature": "Subclass Feature|Cleric|XPHB|17",
+          "gainSubclassFeature": true
+        },
+        "Epic Boon|Cleric|XPHB|19",
+        "Greater Divine Intervention|Cleric|XPHB|20"
+      ],
+      "subclassTitle": "Cleric Subclass"
+    }
+  ],
+  "subclass": [
+    {
+      "name": "Knowledge Domain",
+      "shortName": "Knowledge",
+      "source": "PHB",
+      "className": "Cleric",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "1": [
+              "command",
+              "identify"
+            ],
+            "3": [
+              "augury",
+              "suggestion"
+            ],
+            "5": [
+              "nondetection",
+              "speak with dead"
+            ],
+            "7": [
+              "arcane eye",
+              "confusion"
+            ],
+            "9": [
+              "legend lore",
+              "scrying"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Knowledge Domain|Cleric||Knowledge||1",
+        "Channel Divinity: Knowledge of the Ages|Cleric||Knowledge||2",
+        "Channel Divinity: Read Thoughts|Cleric||Knowledge||6",
+        "Potent Spellcasting|Cleric||Knowledge||8",
+        "Blessed Strikes|Cleric||Knowledge||8|TCE",
+        "Visions of the Past|Cleric||Knowledge||17"
+      ]
+    },
+    {
+      "name": "Life Domain",
+      "shortName": "Life",
+      "source": "XPHB",
+      "className": "Cleric",
+      "classSource": "XPHB",
+      "srd52": true,
+      "basicRules2024": true,
+      "additionalSpells": [
+        {
+          "prepared": {
+            "3": [
+              "aid|xphb",
+              "bless|xphb",
+              "cure wounds|xphb",
+              "lesser restoration|xphb"
+            ],
+            "5": [
+              "mass healing word|xphb",
+              "revivify|xphb"
+            ],
+            "7": [
+              "aura of life|xphb",
+              "death ward|xphb"
+            ],
+            "9": [
+              "greater restoration|xphb",
+              "mass cure wounds|xphb"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Life Domain|Cleric|XPHB|Life|XPHB|3",
+        "Blessed Healer|Cleric|XPHB|Life|XPHB|6",
+        "Supreme Healing|Cleric|XPHB|Life|XPHB|17"
+      ]
+    },
+    {
+      "name": "Light Domain",
+      "shortName": "Light",
+      "source": "XPHB",
+      "className": "Cleric",
+      "classSource": "XPHB",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "3": [
+              "burning hands|xphb",
+              "faerie fire|xphb",
+              "scorching ray|xphb",
+              "see invisibility|xphb"
+            ],
+            "5": [
+              "daylight|xphb",
+              "fireball|xphb"
+            ],
+            "7": [
+              "arcane eye|xphb",
+              "wall of fire|xphb"
+            ],
+            "9": [
+              "flame strike|xphb",
+              "scrying|xphb"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Light Domain|Cleric|XPHB|Light|XPHB|3",
+        "Improved Warding Flare|Cleric|XPHB|Light|XPHB|6",
+        "Corona of Light|Cleric|XPHB|Light|XPHB|17"
+      ]
+    },
+    {
+      "name": "Nature Domain",
+      "shortName": "Nature",
+      "source": "PHB",
+      "className": "Cleric",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "known": {
+            "1": {
+              "_": [
+                {
+                  "choose": "level=0|class=Druid"
+                }
+              ]
+            }
+          },
+          "prepared": {
+            "1": [
+              "animal friendship",
+              "speak with animals"
+            ],
+            "3": [
+              "barkskin",
+              "spike growth"
+            ],
+            "5": [
+              "plant growth",
+              "wind wall"
+            ],
+            "7": [
+              "dominate beast",
+              "grasping vine"
+            ],
+            "9": [
+              "insect plague",
+              "tree stride"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Nature Domain|Cleric||Nature||1",
+        "Channel Divinity: Charm Animals and Plants|Cleric||Nature||2",
+        "Dampen Elements|Cleric||Nature||6",
+        "Divine Strike|Cleric||Nature||8",
+        "Blessed Strikes|Cleric||Nature||8|TCE",
+        "Master of Nature|Cleric||Nature||17"
+      ]
+    },
+    {
+      "name": "Tempest Domain",
+      "shortName": "Tempest",
+      "source": "PHB",
+      "className": "Cleric",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "1": [
+              "fog cloud",
+              "thunderwave"
+            ],
+            "3": [
+              "gust of wind",
+              "shatter"
+            ],
+            "5": [
+              "call lightning",
+              "sleet storm"
+            ],
+            "7": [
+              "control water",
+              "ice storm"
+            ],
+            "9": [
+              "destructive wave",
+              "insect plague"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Tempest Domain|Cleric||Tempest||1",
+        "Channel Divinity: Destructive Wrath|Cleric||Tempest||2",
+        "Thunderbolt Strike|Cleric||Tempest||6",
+        "Divine Strike|Cleric||Tempest||8",
+        "Blessed Strikes|Cleric||Tempest||8|TCE",
+        "Stormborn|Cleric||Tempest||17"
+      ]
+    },
+    {
+      "name": "Trickery Domain",
+      "shortName": "Trickery",
+      "source": "XPHB",
+      "className": "Cleric",
+      "classSource": "XPHB",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "3": [
+              "charm person|xphb",
+              "disguise self|xphb",
+              "invisibility|xphb",
+              "pass without trace|xphb"
+            ],
+            "5": [
+              "hypnotic pattern|xphb",
+              "nondetection|xphb"
+            ],
+            "7": [
+              "confusion|xphb",
+              "dimension door|xphb"
+            ],
+            "9": [
+              "dominate person|xphb",
+              "modify memory|xphb"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Trickery Domain|Cleric|XPHB|Trickery|XPHB|3",
+        "Trickster's Transposition|Cleric|XPHB|Trickery|XPHB|6",
+        "Improved Duplicity|Cleric|XPHB|Trickery|XPHB|17"
+      ]
+    },
+    {
+      "name": "War Domain",
+      "shortName": "War",
+      "source": "XPHB",
+      "className": "Cleric",
+      "classSource": "XPHB",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "3": [
+              "guiding bolt|xphb",
+              "magic weapon|xphb",
+              "shield of faith|xphb",
+              "spiritual weapon|xphb"
+            ],
+            "5": [
+              "crusader's mantle|xphb",
+              "spirit guardians|xphb"
+            ],
+            "7": [
+              "fire shield|xphb",
+              "freedom of movement|xphb"
+            ],
+            "9": [
+              "hold monster|xphb",
+              "steel wind strike|xphb"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "War Domain|Cleric|XPHB|War|XPHB|3",
+        "War God's Blessing|Cleric|XPHB|War|XPHB|6",
+        "Avatar of Battle|Cleric|XPHB|War|XPHB|17"
+      ]
+    },
+    {
+      "name": "Death Domain",
+      "shortName": "Death",
+      "source": "DMG",
+      "className": "Cleric",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "known": {
+            "1": {
+              "_": [
+                {
+                  "choose": "level=0|school=N",
+                  "count": 1
+                }
+              ]
+            }
+          },
+          "prepared": {
+            "1": [
+              "false life",
+              "ray of sickness"
+            ],
+            "3": [
+              "blindness/deafness",
+              "ray of enfeeblement"
+            ],
+            "5": [
+              "animate dead",
+              "vampiric touch"
+            ],
+            "7": [
+              "blight",
+              "death ward"
+            ],
+            "9": [
+              "antilife shell",
+              "cloudkill"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Death Domain|Cleric||Death|DMG|1",
+        "Channel Divinity: Touch of Death|Cleric||Death|DMG|2",
+        "Inescapable Destruction|Cleric||Death|DMG|6",
+        "Divine Strike|Cleric||Death|DMG|8",
+        "Blessed Strikes|Cleric||Death|DMG|8|TCE",
+        "Improved Reaper|Cleric||Death|DMG|17"
+      ]
+    },
+    {
+      "name": "Arcana Domain",
+      "shortName": "Arcana",
+      "source": "SCAG",
+      "className": "Cleric",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "known": {
+            "1": {
+              "_": [
+                {
+                  "choose": "level=0|class=Wizard",
+                  "count": 2
+                }
+              ]
+            }
+          },
+          "prepared": {
+            "1": [
+              "detect magic",
+              "magic missile"
+            ],
+            "3": [
+              "magic weapon",
+              "Nystul's magic aura"
+            ],
+            "5": [
+              "dispel magic",
+              "magic circle"
+            ],
+            "7": [
+              "arcane eye",
+              "Leomund's secret chest"
+            ],
+            "9": [
+              "planar binding",
+              "teleportation circle"
+            ],
+            "17": [
+              {
+                "choose": "level=6|class=Wizard"
+              },
+              {
+                "choose": "level=7|class=Wizard"
+              },
+              {
+                "choose": "level=8|class=Wizard"
+              },
+              {
+                "choose": "level=9|class=Wizard"
+              }
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Arcana Domain|Cleric||Arcana|SCAG|1",
+        "Channel Divinity: Arcane Abjuration|Cleric||Arcana|SCAG|2",
+        "Spell Breaker|Cleric||Arcana|SCAG|6",
+        "Potent Spellcasting|Cleric||Arcana|SCAG|8",
+        "Blessed Strikes|Cleric||Arcana|SCAG|8|TCE",
+        "Arcane Mastery|Cleric||Arcana|SCAG|17"
+      ]
+    },
+    {
+      "name": "Ambition Domain (PSA)",
+      "shortName": "Ambition (PSA)",
+      "source": "PSA",
+      "className": "Cleric",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "1": [
+              "bane",
+              "disguise self"
+            ],
+            "3": [
+              "mirror image",
+              "ray of enfeeblement"
+            ],
+            "5": [
+              "bestow curse",
+              "vampiric touch"
+            ],
+            "7": [
+              "death ward",
+              "dimension door"
+            ],
+            "9": [
+              "dominate person",
+              "modify memory"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Ambition Domain (PSA)|Cleric||Ambition (PSA)|PSA|1",
+        "Channel Divinity: Invoke Duplicity|Cleric||Ambition (PSA)|PSA|2",
+        "Channel Divinity: Cloak of Shadows|Cleric||Ambition (PSA)|PSA|6",
+        "Potent Spellcasting|Cleric||Ambition (PSA)|PSA|8",
+        "Blessed Strikes|Cleric||Ambition (PSA)|PSA|8|TCE",
+        "Improved Duplicity|Cleric||Ambition (PSA)|PSA|17"
+      ]
+    },
+    {
+      "name": "Knowledge Domain (PSA)",
+      "shortName": "Knowledge (PSA)",
+      "source": "PSA",
+      "className": "Cleric",
+      "classSource": "PHB",
+      "isReprinted": true,
+      "additionalSpells": [
+        {
+          "prepared": {
+            "1": [
+              "command",
+              "identify"
+            ],
+            "3": [
+              "augury",
+              "suggestion"
+            ],
+            "5": [
+              "nondetection",
+              "speak with dead"
+            ],
+            "7": [
+              "arcane eye",
+              "confusion"
+            ],
+            "9": [
+              "legend lore",
+              "scrying"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Knowledge Domain (PSA)|Cleric||Knowledge (PSA)|PSA|1",
+        "Channel Divinity: Knowledge of the Ages|Cleric||Knowledge||2",
+        "Channel Divinity: Read Thoughts|Cleric||Knowledge||6",
+        "Potent Spellcasting|Cleric||Knowledge||8",
+        "Blessed Strikes|Cleric||Knowledge||8|TCE",
+        "Visions of the Past|Cleric||Knowledge||17"
+      ]
+    },
+    {
+      "name": "Solidarity Domain (PSA)",
+      "shortName": "Solidarity (PSA)",
+      "source": "PSA",
+      "className": "Cleric",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "1": [
+              "bless",
+              "guiding bolt"
+            ],
+            "3": [
+              "aid",
+              "warding bond"
+            ],
+            "5": [
+              "beacon of hope",
+              "crusader's mantle"
+            ],
+            "7": [
+              "aura of life",
+              "guardian of faith"
+            ],
+            "9": [
+              "circle of power",
+              "mass cure wounds"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Solidarity Domain (PSA)|Cleric||Solidarity (PSA)|PSA|1",
+        "Channel Divinity: Preserve Life|Cleric||Solidarity (PSA)|PSA|2",
+        "Oketra's Blessing|Cleric||Solidarity (PSA)|PSA|6",
+        "Divine Strike|Cleric||Solidarity (PSA)|PSA|8",
+        "Blessed Strikes|Cleric||Solidarity (PSA)|PSA|8|TCE",
+        "Supreme Healing|Cleric||Solidarity (PSA)|PSA|17"
+      ]
+    },
+    {
+      "name": "Strength Domain (PSA)",
+      "shortName": "Strength (PSA)",
+      "source": "PSA",
+      "className": "Cleric",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "known": {
+            "1": {
+              "_": [
+                {
+                  "choose": "level=0|class=Druid"
+                }
+              ]
+            }
+          },
+          "prepared": {
+            "1": [
+              "divine favor",
+              "shield of faith"
+            ],
+            "3": [
+              "enhance ability",
+              "protection from poison"
+            ],
+            "5": [
+              "haste",
+              "protection from energy"
+            ],
+            "7": [
+              "dominate beast",
+              "stoneskin"
+            ],
+            "9": [
+              "destructive wave",
+              "insect plague"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Strength Domain (PSA)|Cleric||Strength (PSA)|PSA|1",
+        "Channel Divinity: Feat of Strength|Cleric||Strength (PSA)|PSA|2",
+        "Rhonas's Blessing|Cleric||Strength (PSA)|PSA|6",
+        "Divine Strike|Cleric||Strength (PSA)|PSA|8",
+        "Blessed Strikes|Cleric||Strength (PSA)|PSA|8|TCE",
+        "Avatar of Battle|Cleric||Strength (PSA)|PSA|17"
+      ]
+    },
+    {
+      "name": "Zeal Domain (PSA)",
+      "shortName": "Zeal (PSA)",
+      "source": "PSA",
+      "className": "Cleric",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "1": [
+              "searing smite",
+              "thunderous smite"
+            ],
+            "3": [
+              "magic weapon",
+              "shatter"
+            ],
+            "5": [
+              "haste",
+              "fireball"
+            ],
+            "7": [
+              "fire shield|",
+              "freedom of movement"
+            ],
+            "9": [
+              "destructive wave",
+              "flame strike"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Zeal Domain (PSA)|Cleric||Zeal (PSA)|PSA|1",
+        "Channel Divinity: Consuming Fervor|Cleric||Zeal (PSA)|PSA|2",
+        "Resounding Strike|Cleric||Zeal (PSA)|PSA|6",
+        "Divine Strike|Cleric||Zeal (PSA)|PSA|8",
+        "Blessed Strikes|Cleric||Zeal (PSA)|PSA|8|TCE",
+        "Blaze of Glory|Cleric||Zeal (PSA)|PSA|17"
+      ]
+    },
+    {
+      "name": "Forge Domain",
+      "shortName": "Forge",
+      "source": "XGE",
+      "className": "Cleric",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "1": [
+              "identify",
+              "searing smite"
+            ],
+            "3": [
+              "heat metal",
+              "magic weapon"
+            ],
+            "5": [
+              "elemental weapon",
+              "protection from energy"
+            ],
+            "7": [
+              "fabricate",
+              "wall of fire"
+            ],
+            "9": [
+              "animate objects",
+              "creation"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Forge Domain|Cleric||Forge|XGE|1",
+        "Channel Divinity: Artisan's Blessing|Cleric||Forge|XGE|2",
+        "Soul of the Forge|Cleric||Forge|XGE|6",
+        "Divine Strike|Cleric||Forge|XGE|8",
+        "Blessed Strikes|Cleric||Forge|XGE|8|TCE",
+        "Saint of Forge and Fire|Cleric||Forge|XGE|17"
+      ]
+    },
+    {
+      "name": "Grave Domain",
+      "shortName": "Grave",
+      "source": "XGE",
+      "className": "Cleric",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "1": [
+              "bane",
+              "false life"
+            ],
+            "3": [
+              "gentle repose",
+              "ray of enfeeblement"
+            ],
+            "5": [
+              "revivify",
+              "vampiric touch"
+            ],
+            "7": [
+              "blight",
+              "death ward"
+            ],
+            "9": [
+              "antilife shell",
+              "raise dead"
+            ]
+          },
+          "known": {
+            "1": [
+              "spare the dying#c"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Grave Domain|Cleric||Grave|XGE|1",
+        "Channel Divinity: Path to the Grave|Cleric||Grave|XGE|2",
+        "Sentinel at Death's Door|Cleric||Grave|XGE|6",
+        "Potent Spellcasting|Cleric||Grave|XGE|8",
+        "Blessed Strikes|Cleric||Grave|XGE|8|TCE",
+        "Keeper of Souls|Cleric||Grave|XGE|17"
+      ]
+    },
+    {
+      "name": "Order Domain",
+      "shortName": "Order",
+      "source": "TCE",
+      "className": "Cleric",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "1": [
+              "command",
+              "heroism"
+            ],
+            "3": [
+              "hold person",
+              "zone of truth"
+            ],
+            "5": [
+              "mass healing word",
+              "slow"
+            ],
+            "7": [
+              "compulsion",
+              "locate creature"
+            ],
+            "9": [
+              "commune",
+              "dominate person"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Order Domain|Cleric||Order|TCE|1",
+        "Channel Divinity: Order's Demand|Cleric||Order|TCE|2",
+        "Embodiment of the Law|Cleric||Order|TCE|6",
+        "Divine Strike|Cleric||Order|TCE|8",
+        "Blessed Strikes|Cleric||Order|TCE|8|TCE",
+        "Order's Wrath|Cleric||Order|TCE|17"
+      ]
+    },
+    {
+      "name": "Peace Domain",
+      "shortName": "Peace",
+      "source": "TCE",
+      "className": "Cleric",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "1": [
+              "heroism",
+              "sanctuary"
+            ],
+            "3": [
+              "aid",
+              "warding bond"
+            ],
+            "5": [
+              "beacon of hope",
+              "sending"
+            ],
+            "7": [
+              "aura of purity",
+              "Otiluke's resilient sphere"
+            ],
+            "9": [
+              "greater restoration",
+              "Rary's telepathic bond"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Peace Domain|Cleric||Peace|TCE|1",
+        "Channel Divinity: Balm of Peace|Cleric||Peace|TCE|2",
+        "Protective Bond|Cleric||Peace|TCE|6",
+        "Potent Spellcasting|Cleric||Peace|TCE|8",
+        "Blessed Strikes|Cleric||Peace|TCE|8|TCE",
+        "Expansive Bond|Cleric||Peace|TCE|17"
+      ]
+    },
+    {
+      "name": "Twilight Domain",
+      "shortName": "Twilight",
+      "source": "TCE",
+      "className": "Cleric",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "1": [
+              "faerie fire",
+              "sleep"
+            ],
+            "3": [
+              "moonbeam",
+              "see invisibility"
+            ],
+            "5": [
+              "aura of vitality",
+              "Leomund's tiny hut"
+            ],
+            "7": [
+              "aura of life",
+              "greater invisibility"
+            ],
+            "9": [
+              "circle of power",
+              "mislead"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Twilight Domain|Cleric||Twilight|TCE|1",
+        "Channel Divinity: Twilight Sanctuary|Cleric||Twilight|TCE|2",
+        "Steps of Night|Cleric||Twilight|TCE|6",
+        "Divine Strike|Cleric||Twilight|TCE|8",
+        "Blessed Strikes|Cleric||Twilight|TCE|8|TCE",
+        "Twilight Shroud|Cleric||Twilight|TCE|17"
+      ]
+    },
+    {
+      "name": "Blood Domain",
+      "shortName": "Blood",
+      "source": "TDCSR",
+      "className": "Cleric",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "1": [
+              "false life",
+              "sleep"
+            ],
+            "3": [
+              "hold person",
+              "ray of enfeeblement"
+            ],
+            "5": [
+              "haste",
+              "slow"
+            ],
+            "7": [
+              "blight",
+              "stoneskin"
+            ],
+            "9": [
+              "dominate person",
+              "hold monster"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Blood Domain|Cleric|PHB|Blood|TDCSR|1",
+        "Channel Divinity: Crimson Bond|Cleric|PHB|Blood|TDCSR|2",
+        "Channel Divinity: Blood Puppet|Cleric|PHB|Blood|TDCSR|6",
+        "Sanguine Recall|Cleric|PHB|Blood|TDCSR|6",
+        "Divine Strike|Cleric|PHB|Blood|TDCSR|8",
+        "Divine Strike (14th Level)|Cleric|PHB|Blood|TDCSR|14",
+        "Channel Divinity: Blood Puppet (17th Level)|Cleric|PHB|Blood|TDCSR|17",
+        "Vascular Corruption Aura|Cleric|PHB|Blood|TDCSR|17"
+      ]
+    },
+    {
+      "name": "Moon Domain",
+      "shortName": "Moon",
+      "source": "TDCSR",
+      "className": "Cleric",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "1": [
+              "faerie fire",
+              "silent image"
+            ],
+            "3": [
+              "invisibility",
+              "moonbeam"
+            ],
+            "5": [
+              "hypnotic pattern",
+              "major image"
+            ],
+            "7": [
+              "greater invisibility",
+              "hallucinatory terrain"
+            ],
+            "9": [
+              "dream",
+              "passwall"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Moon Domain|Cleric|PHB|Moon|TDCSR|1",
+        "Channel Divinity: Blessing of the Full Moon|Cleric|PHB|Moon|TDCSR|2",
+        "Channel Divinity: Mind of Two Moons|Cleric|PHB|Moon|TDCSR|6",
+        "Empowered Cantrips|Cleric|PHB|Moon|TDCSR|8",
+        "Eclipse of Ill Omen|Cleric|PHB|Moon|TDCSR|17"
+      ]
+    }
+  ]
+}

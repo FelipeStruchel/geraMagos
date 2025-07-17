@@ -1,0 +1,1240 @@
+{
+  "class": [
+    {
+      "name": "Sorcerer",
+      "source": "XPHB",
+      "srd52": true,
+      "basicRules2024": true,
+      "primaryAbility": [
+        {
+          "cha": true
+        }
+      ],
+      "hd": {
+        "number": 1,
+        "faces": 6
+      },
+      "proficiency": [
+        "con",
+        "cha"
+      ],
+      "spellcastingAbility": "cha",
+      "casterProgression": "full",
+      "preparedSpellsProgression": [
+        2,
+        4,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        16,
+        16,
+        17,
+        17,
+        18,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "preparedSpellsChange": "level",
+      "cantripProgression": [
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "featProgression": [
+        {
+          "name": "Epic Boon",
+          "category": [
+            "EB"
+          ],
+          "progression": {
+            "19": 1
+          }
+        }
+      ],
+      "optionalfeatureProgression": [
+        {
+          "name": "Metamagic",
+          "featureType": [
+            "MM"
+          ],
+          "progression": {
+            "2": 2,
+            "10": 4,
+            "17": 6
+          }
+        }
+      ],
+      "startingProficiencies": {
+        "weapons": [
+          "simple"
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "arcana",
+                "deception",
+                "insight",
+                "intimidation",
+                "persuasion",
+                "religion"
+              ],
+              "count": 2
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "defaultData": [
+          {
+            "A": [
+              {
+                "item": "spear|xphb"
+              },
+              {
+                "item": "dagger|xphb",
+                "quantity": 2
+              },
+              {
+                "item": "crystal|xphb"
+              },
+              {
+                "item": "dungeoneer's pack|xphb"
+              },
+              {
+                "value": 2800
+              }
+            ],
+            "B": [
+              {
+                "value": 5000
+              }
+            ]
+          }
+        ],
+        "entries": [
+          "{@i Choose A or B:} (A) {@item Spear|XPHB}, 2 {@item Dagger|XPHB|Daggers}, {@item Arcane Focus|XPHB} ({@item crystal|XPHB}), {@item Dungeoneer's Pack|XPHB}, and 28 GP; or (B) 50 GP"
+        ]
+      },
+      "multiclassing": {},
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "Sorcery Points"
+          ],
+          "rows": [
+            [
+              0
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              9
+            ],
+            [
+              10
+            ],
+            [
+              11
+            ],
+            [
+              12
+            ],
+            [
+              13
+            ],
+            [
+              14
+            ],
+            [
+              15
+            ],
+            [
+              16
+            ],
+            [
+              17
+            ],
+            [
+              18
+            ],
+            [
+              19
+            ],
+            [
+              20
+            ]
+          ]
+        },
+        {
+          "colLabels": [
+            "{@filter Cantrips|spells|level=0|class=sorcerer}",
+            "{@filter Prepared Spells|spells|level=!0|class=sorcerer}"
+          ],
+          "rows": [
+            [
+              4,
+              2
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              4,
+              6
+            ],
+            [
+              5,
+              7
+            ],
+            [
+              5,
+              9
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              5,
+              11
+            ],
+            [
+              5,
+              12
+            ],
+            [
+              5,
+              14
+            ],
+            [
+              6,
+              15
+            ],
+            [
+              6,
+              16
+            ],
+            [
+              6,
+              16
+            ],
+            [
+              6,
+              17
+            ],
+            [
+              6,
+              17
+            ],
+            [
+              6,
+              18
+            ],
+            [
+              6,
+              18
+            ],
+            [
+              6,
+              19
+            ],
+            [
+              6,
+              20
+            ],
+            [
+              6,
+              21
+            ],
+            [
+              6,
+              22
+            ]
+          ]
+        },
+        {
+          "title": "Spell Slots per Spell Level",
+          "colLabels": [
+            "{@filter 1st|spells|level=1|class=sorcerer}",
+            "{@filter 2nd|spells|level=2|class=sorcerer}",
+            "{@filter 3rd|spells|level=3|class=sorcerer}",
+            "{@filter 4th|spells|level=4|class=sorcerer}",
+            "{@filter 5th|spells|level=5|class=sorcerer}",
+            "{@filter 6th|spells|level=6|class=sorcerer}",
+            "{@filter 7th|spells|level=7|class=sorcerer}",
+            "{@filter 8th|spells|level=8|class=sorcerer}",
+            "{@filter 9th|spells|level=9|class=sorcerer}"
+          ],
+          "rowsSpellProgression": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              2,
+              2,
+              1,
+              1
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "Spellcasting|Sorcerer|XPHB|1",
+        "Innate Sorcery|Sorcerer|XPHB|1",
+        "Font of Magic|Sorcerer|XPHB|2",
+        "Metamagic|Sorcerer|XPHB|2",
+        "Metamagic Options|Sorcerer|XPHB|2",
+        {
+          "classFeature": "Sorcerer Subclass|Sorcerer|XPHB|3",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Sorcerer|XPHB|4",
+        "Sorcerous Restoration|Sorcerer|XPHB|5",
+        {
+          "classFeature": "Subclass Feature|Sorcerer|XPHB|6",
+          "gainSubclassFeature": true
+        },
+        "Sorcery Incarnate|Sorcerer|XPHB|7",
+        "Ability Score Improvement|Sorcerer|XPHB|8",
+        "Metamagic|Sorcerer|XPHB|10",
+        "Ability Score Improvement|Sorcerer|XPHB|12",
+        {
+          "classFeature": "Subclass Feature|Sorcerer|XPHB|14",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Sorcerer|XPHB|16",
+        "Metamagic|Sorcerer|XPHB|17",
+        {
+          "classFeature": "Subclass Feature|Sorcerer|XPHB|18",
+          "gainSubclassFeature": true
+        },
+        "Epic Boon|Sorcerer|XPHB|19",
+        "Arcane Apotheosis|Sorcerer|XPHB|20"
+      ],
+      "subclassTitle": "Sorcerer Subclass"
+    }
+  ],
+  "subclass": [
+    {
+      "name": "Draconic Sorcery",
+      "shortName": "Draconic",
+      "source": "XPHB",
+      "className": "Sorcerer",
+      "classSource": "XPHB",
+      "srd52": true,
+      "basicRules2024": true,
+      "additionalSpells": [
+        {
+          "prepared": {
+            "3": [
+              "alter self|xphb",
+              "chromatic orb|xphb",
+              "command|xphb",
+              "dragon's breath|xphb"
+            ],
+            "5": [
+              "fear|xphb",
+              "fly|xphb"
+            ],
+            "7": [
+              "arcane eye|xphb",
+              "charm monster|xphb"
+            ],
+            "9": [
+              "legend lore|xphb",
+              "summon dragon|xphb"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Draconic Sorcery|Sorcerer|XPHB|Draconic|XPHB|3",
+        "Elemental Affinity|Sorcerer|XPHB|Draconic|XPHB|6",
+        "Dragon Wings|Sorcerer|XPHB|Draconic|XPHB|14",
+        "Dragon Companion|Sorcerer|XPHB|Draconic|XPHB|18"
+      ]
+    },
+    {
+      "name": "Wild Magic",
+      "shortName": "Wild",
+      "source": "PHB",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Wild Magic|Sorcerer||Wild||1",
+        "Bend Luck|Sorcerer||Wild||6",
+        "Controlled Chaos|Sorcerer||Wild||14",
+        "Spell Bombardment|Sorcerer||Wild||18"
+      ]
+    },
+    {
+      "name": "Pyromancer (PSK)",
+      "shortName": "Pyromancer (PSK)",
+      "source": "PSK",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Pyromancer (PSK)|Sorcerer||Pyromancer (PSK)|PSK|1",
+        "Fire in the Veins|Sorcerer||Pyromancer (PSK)|PSK|6",
+        "Pyromancer's Fury|Sorcerer||Pyromancer (PSK)|PSK|14",
+        "Fiery Soul|Sorcerer||Pyromancer (PSK)|PSK|18"
+      ]
+    },
+    {
+      "name": "Divine Soul",
+      "shortName": "Divine Soul",
+      "source": "XGE",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "name": "Good",
+          "known": {
+            "1": [
+              "cure wounds"
+            ]
+          },
+          "expanded": {
+            "1": [
+              {
+                "all": "level=0|class=Cleric"
+              },
+              {
+                "all": "level=1|class=Cleric"
+              }
+            ],
+            "3": [
+              {
+                "all": "level=2|class=Cleric"
+              }
+            ],
+            "5": [
+              {
+                "all": "level=3|class=Cleric"
+              }
+            ],
+            "7": [
+              {
+                "all": "level=4|class=Cleric"
+              }
+            ],
+            "9": [
+              {
+                "all": "level=5|class=Cleric"
+              }
+            ],
+            "11": [
+              {
+                "all": "level=6|class=Cleric"
+              }
+            ],
+            "13": [
+              {
+                "all": "level=7|class=Cleric"
+              }
+            ],
+            "15": [
+              {
+                "all": "level=8|class=Cleric"
+              }
+            ],
+            "17": [
+              {
+                "all": "level=9|class=Cleric"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Evil",
+          "known": {
+            "1": [
+              "inflict wounds"
+            ]
+          },
+          "expanded": {
+            "1": [
+              {
+                "all": "level=0|class=Cleric"
+              },
+              {
+                "all": "level=1|class=Cleric"
+              }
+            ],
+            "3": [
+              {
+                "all": "level=2|class=Cleric"
+              }
+            ],
+            "5": [
+              {
+                "all": "level=3|class=Cleric"
+              }
+            ],
+            "7": [
+              {
+                "all": "level=4|class=Cleric"
+              }
+            ],
+            "9": [
+              {
+                "all": "level=5|class=Cleric"
+              }
+            ],
+            "11": [
+              {
+                "all": "level=6|class=Cleric"
+              }
+            ],
+            "13": [
+              {
+                "all": "level=7|class=Cleric"
+              }
+            ],
+            "15": [
+              {
+                "all": "level=8|class=Cleric"
+              }
+            ],
+            "17": [
+              {
+                "all": "level=9|class=Cleric"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Law",
+          "known": {
+            "1": [
+              "bless"
+            ]
+          },
+          "expanded": {
+            "1": [
+              {
+                "all": "level=0|class=Cleric"
+              },
+              {
+                "all": "level=1|class=Cleric"
+              }
+            ],
+            "3": [
+              {
+                "all": "level=2|class=Cleric"
+              }
+            ],
+            "5": [
+              {
+                "all": "level=3|class=Cleric"
+              }
+            ],
+            "7": [
+              {
+                "all": "level=4|class=Cleric"
+              }
+            ],
+            "9": [
+              {
+                "all": "level=5|class=Cleric"
+              }
+            ],
+            "11": [
+              {
+                "all": "level=6|class=Cleric"
+              }
+            ],
+            "13": [
+              {
+                "all": "level=7|class=Cleric"
+              }
+            ],
+            "15": [
+              {
+                "all": "level=8|class=Cleric"
+              }
+            ],
+            "17": [
+              {
+                "all": "level=9|class=Cleric"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Chaos",
+          "known": {
+            "1": [
+              "bane"
+            ]
+          },
+          "expanded": {
+            "1": [
+              {
+                "all": "level=0|class=Cleric"
+              },
+              {
+                "all": "level=1|class=Cleric"
+              }
+            ],
+            "3": [
+              {
+                "all": "level=2|class=Cleric"
+              }
+            ],
+            "5": [
+              {
+                "all": "level=3|class=Cleric"
+              }
+            ],
+            "7": [
+              {
+                "all": "level=4|class=Cleric"
+              }
+            ],
+            "9": [
+              {
+                "all": "level=5|class=Cleric"
+              }
+            ],
+            "11": [
+              {
+                "all": "level=6|class=Cleric"
+              }
+            ],
+            "13": [
+              {
+                "all": "level=7|class=Cleric"
+              }
+            ],
+            "15": [
+              {
+                "all": "level=8|class=Cleric"
+              }
+            ],
+            "17": [
+              {
+                "all": "level=9|class=Cleric"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Neutrality",
+          "known": {
+            "1": [
+              "protection from evil and good"
+            ]
+          },
+          "expanded": {
+            "1": [
+              {
+                "all": "level=0|class=Cleric"
+              },
+              {
+                "all": "level=1|class=Cleric"
+              }
+            ],
+            "3": [
+              {
+                "all": "level=2|class=Cleric"
+              }
+            ],
+            "5": [
+              {
+                "all": "level=3|class=Cleric"
+              }
+            ],
+            "7": [
+              {
+                "all": "level=4|class=Cleric"
+              }
+            ],
+            "9": [
+              {
+                "all": "level=5|class=Cleric"
+              }
+            ],
+            "11": [
+              {
+                "all": "level=6|class=Cleric"
+              }
+            ],
+            "13": [
+              {
+                "all": "level=7|class=Cleric"
+              }
+            ],
+            "15": [
+              {
+                "all": "level=8|class=Cleric"
+              }
+            ],
+            "17": [
+              {
+                "all": "level=9|class=Cleric"
+              }
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Divine Soul|Sorcerer||Divine Soul|XGE|1",
+        "Empowered Healing|Sorcerer||Divine Soul|XGE|6",
+        "Otherworldly Wings|Sorcerer||Divine Soul|XGE|14",
+        "Unearthly Recovery|Sorcerer||Divine Soul|XGE|18"
+      ]
+    },
+    {
+      "name": "Shadow Magic",
+      "shortName": "Shadow",
+      "source": "XGE",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "known": {
+            "3": [
+              "darkness"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Shadow Magic|Sorcerer||Shadow|XGE|1",
+        "Hound of Ill Omen|Sorcerer||Shadow|XGE|6",
+        "Shadow Walk|Sorcerer||Shadow|XGE|14",
+        "Umbral Form|Sorcerer||Shadow|XGE|18"
+      ]
+    },
+    {
+      "name": "Storm Sorcery",
+      "shortName": "Storm",
+      "source": "XGE",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Storm Sorcery|Sorcerer||Storm|XGE|1",
+        "Heart of the Storm|Sorcerer||Storm|XGE|6",
+        "Storm Guide|Sorcerer||Storm|XGE|6",
+        "Storm's Fury|Sorcerer||Storm|XGE|14",
+        "Wind Soul|Sorcerer||Storm|XGE|18"
+      ]
+    },
+    {
+      "name": "Aberrant Mind",
+      "shortName": "Aberrant Mind",
+      "source": "TCE",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "known": {
+            "1": [
+              "mind sliver|tce#c",
+              "arms of Hadar",
+              "dissonant whispers"
+            ],
+            "3": [
+              "calm emotions",
+              "detect thoughts"
+            ],
+            "5": [
+              "hunger of Hadar",
+              "sending"
+            ],
+            "7": [
+              "Evard's black tentacles",
+              "summon aberration|TCE"
+            ],
+            "9": [
+              "Rary's telepathic bond",
+              "telekinesis"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Aberrant Mind|Sorcerer||Aberrant Mind|TCE|1",
+        "Psionic Sorcery|Sorcerer||Aberrant Mind|TCE|6",
+        "Psychic Defenses|Sorcerer||Aberrant Mind|TCE|6",
+        "Revelation in Flesh|Sorcerer||Aberrant Mind|TCE|14",
+        "Warping Implosion|Sorcerer||Aberrant Mind|TCE|18"
+      ]
+    },
+    {
+      "name": "Clockwork Soul",
+      "shortName": "Clockwork Soul",
+      "source": "TCE",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "known": {
+            "1": [
+              "alarm",
+              "protection from evil and good"
+            ],
+            "3": [
+              "aid",
+              "lesser restoration"
+            ],
+            "5": [
+              "dispel magic",
+              "protection from energy"
+            ],
+            "7": [
+              "freedom of movement",
+              "summon construct|TCE"
+            ],
+            "9": [
+              "greater restoration",
+              "wall of force"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Clockwork Soul|Sorcerer||Clockwork Soul|TCE|1",
+        "Bastion of Law|Sorcerer||Clockwork Soul|TCE|6",
+        "Trance of Order|Sorcerer||Clockwork Soul|TCE|14",
+        "Clockwork Cavalcade|Sorcerer||Clockwork Soul|TCE|18"
+      ]
+    },
+    {
+      "name": "Runechild",
+      "shortName": "Runechild",
+      "source": "TDCSR",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "known": {
+            "3": [
+              "longstrider",
+              "protection from evil and good"
+            ],
+            "5": [
+              "lesser restoration",
+              "protection from poison"
+            ],
+            "9": [
+              "glyph of warding",
+              "magic circle"
+            ],
+            "13": [
+              "death ward",
+              "freedom of movement"
+            ],
+            "17": [
+              "greater restoration",
+              "telekinesis"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Runechild|Sorcerer|PHB|Runechild|TDCSR|1",
+        "Glyph of Aegis (6th Level)|Sorcerer|PHB|Runechild|TDCSR|6",
+        "Sigilic Augmentation|Sorcerer|PHB|Runechild|TDCSR|6",
+        "Manifest Inscriptions|Sorcerer|PHB|Runechild|TDCSR|6",
+        "Glyph of Aegis (14th Level)|Sorcerer|PHB|Runechild|TDCSR|14",
+        "Runic Torrent|Sorcerer|PHB|Runechild|TDCSR|14",
+        "Arcane Exemplar|Sorcerer|PHB|Runechild|TDCSR|18"
+      ]
+    },
+    {
+      "name": "Lunar Sorcery",
+      "shortName": "Lunar",
+      "source": "DSotDQ",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "name": "Full Moon",
+          "known": {
+            "1": [
+              "shield",
+              "ray of sickness",
+              "color spray"
+            ],
+            "3": [
+              "lesser restoration",
+              "blindness/deafness",
+              "alter self"
+            ],
+            "5": [
+              "dispel magic",
+              "vampiric touch",
+              "phantom steed"
+            ],
+            "7": [
+              "death ward",
+              "confusion",
+              "hallucinatory terrain"
+            ],
+            "9": [
+              "Rary's telepathic bond",
+              "hold monster",
+              "mislead"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Lunar Sorcery|Sorcerer||Lunar|DSotDQ|1",
+        "Lunar Boons|Sorcerer||Lunar|DSotDQ|6",
+        "Waxing and Waning|Sorcerer||Lunar|DSotDQ|6",
+        "Lunar Empowerment|Sorcerer||Lunar|DSotDQ|14",
+        "Lunar Phenomenon|Sorcerer||Lunar|DSotDQ|18"
+      ]
+    },
+    {
+      "name": "Aberrant Sorcery",
+      "shortName": "Aberrant",
+      "source": "XPHB",
+      "className": "Sorcerer",
+      "classSource": "XPHB",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "3": [
+              "arms of hadar|xphb",
+              "calm emotions|xphb",
+              "detect thoughts|xphb",
+              "dissonant whispers|xphb",
+              "mind sliver|xphb#c"
+            ],
+            "5": [
+              "hunger of hadar|xphb",
+              "sending|xphb"
+            ],
+            "7": [
+              "evard's black tentacles|xphb",
+              "summon aberration|xphb"
+            ],
+            "9": [
+              "rary's telepathic bond|xphb",
+              "telekinesis|xphb"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Aberrant Sorcery|Sorcerer|XPHB|Aberrant|XPHB|3",
+        "Psionic Sorcery|Sorcerer|XPHB|Aberrant|XPHB|6",
+        "Psychic Defenses|Sorcerer|XPHB|Aberrant|XPHB|6",
+        "Revelation in Flesh|Sorcerer|XPHB|Aberrant|XPHB|14",
+        "Warping Implosion|Sorcerer|XPHB|Aberrant|XPHB|18"
+      ]
+    },
+    {
+      "name": "Clockwork Sorcery",
+      "shortName": "Clockwork",
+      "source": "XPHB",
+      "className": "Sorcerer",
+      "classSource": "XPHB",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "3": [
+              "aid|xphb",
+              "alarm|xphb",
+              "lesser restoration|xphb",
+              "protection from evil and good|xphb"
+            ],
+            "5": [
+              "dispel magic|xphb",
+              "protection from energy|xphb"
+            ],
+            "7": [
+              "freedom of movement|xphb",
+              "summon construct|xphb"
+            ],
+            "9": [
+              "greater restoration|xphb",
+              "wall of force|xphb"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Clockwork Sorcery|Sorcerer|XPHB|Clockwork|XPHB|3",
+        "Bastion of Law|Sorcerer|XPHB|Clockwork|XPHB|6",
+        "Trance of Order|Sorcerer|XPHB|Clockwork|XPHB|14",
+        "Clockwork Cavalcade|Sorcerer|XPHB|Clockwork|XPHB|18"
+      ]
+    },
+    {
+      "name": "Wild Magic Sorcery",
+      "shortName": "Wild Magic",
+      "source": "XPHB",
+      "className": "Sorcerer",
+      "classSource": "XPHB",
+      "subclassFeatures": [
+        "Wild Magic Sorcery|Sorcerer|XPHB|Wild Magic|XPHB|3",
+        "Bend Luck|Sorcerer|XPHB|Wild Magic|XPHB|6",
+        "Controlled Chaos|Sorcerer|XPHB|Wild Magic|XPHB|14",
+        "Tamed Surge|Sorcerer|XPHB|Wild Magic|XPHB|18"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,835 @@
+{
+  "class": [
+    {
+      "name": "Paladin",
+      "source": "XPHB",
+      "srd52": true,
+      "basicRules2024": true,
+      "primaryAbility": [
+        {
+          "str": true,
+          "cha": true
+        }
+      ],
+      "hd": {
+        "number": 1,
+        "faces": 10
+      },
+      "proficiency": [
+        "wis",
+        "cha"
+      ],
+      "spellcastingAbility": "cha",
+      "casterProgression": "artificer",
+      "preparedSpellsProgression": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        6,
+        7,
+        7,
+        9,
+        9,
+        10,
+        10,
+        11,
+        11,
+        12,
+        12,
+        14,
+        14,
+        15,
+        15
+      ],
+      "preparedSpellsChange": "restLong",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "2": [
+              "divine smite|xphb"
+            ],
+            "5": [
+              "find steed|xphb"
+            ]
+          }
+        }
+      ],
+      "featProgression": [
+        {
+          "name": "Fighting Style",
+          "category": [
+            "FS",
+            "FS:P"
+          ],
+          "progression": {
+            "2": 1
+          }
+        },
+        {
+          "name": "Epic Boon",
+          "category": [
+            "EB"
+          ],
+          "progression": {
+            "19": 1
+          }
+        }
+      ],
+      "startingProficiencies": {
+        "armor": [
+          "light",
+          "medium",
+          "heavy",
+          "shield"
+        ],
+        "weapons": [
+          "simple",
+          "martial"
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "athletics",
+                "insight",
+                "intimidation",
+                "medicine",
+                "persuasion",
+                "religion"
+              ],
+              "count": 2
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "defaultData": [
+          {
+            "A": [
+              {
+                "item": "chain mail|xphb"
+              },
+              {
+                "item": "shield|xphb"
+              },
+              {
+                "item": "longsword|xphb"
+              },
+              {
+                "item": "javelin|xphb",
+                "quantity": 6
+              },
+              {
+                "item": "holy symbol|xphb"
+              },
+              {
+                "item": "priest's pack|xphb"
+              },
+              {
+                "value": 900
+              }
+            ],
+            "B": [
+              {
+                "value": 15000
+              }
+            ]
+          }
+        ],
+        "entries": [
+          "{@i Choose A or B:} (A) {@item Chain Mail|XPHB}, {@item Shield|XPHB}, {@item Longsword|XPHB}, 6 {@item Javelin|XPHB|Javelins}, {@item Holy Symbol|XPHB}, {@item Priest's Pack|XPHB}, and 9 GP; or (B) 150 GP"
+        ]
+      },
+      "multiclassing": {
+        "proficienciesGained": {
+          "armor": [
+            "light",
+            "medium",
+            "shield"
+          ],
+          "weapons": [
+            "martial"
+          ]
+        }
+      },
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "Channel Divinity",
+            "{@filter Prepared Spells|spells|level=!0|class=Paladin}"
+          ],
+          "rows": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              2,
+              9
+            ],
+            [
+              2,
+              9
+            ],
+            [
+              3,
+              10
+            ],
+            [
+              3,
+              10
+            ],
+            [
+              3,
+              11
+            ],
+            [
+              3,
+              11
+            ],
+            [
+              3,
+              12
+            ],
+            [
+              3,
+              12
+            ],
+            [
+              3,
+              14
+            ],
+            [
+              3,
+              14
+            ],
+            [
+              3,
+              15
+            ],
+            [
+              3,
+              15
+            ]
+          ]
+        },
+        {
+          "title": "Spell Slots per Spell Level",
+          "colLabels": [
+            "{@filter 1st|spells|level=1|class=Paladin}",
+            "{@filter 2nd|spells|level=2|class=Paladin}",
+            "{@filter 3rd|spells|level=3|class=Paladin}",
+            "{@filter 4th|spells|level=4|class=Paladin}",
+            "{@filter 5th|spells|level=5|class=Paladin}"
+          ],
+          "rowsSpellProgression": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              2,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              2,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              2,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              2,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "Lay on Hands|Paladin|XPHB|1",
+        "Spellcasting|Paladin|XPHB|1",
+        "Weapon Mastery|Paladin|XPHB|1",
+        "Fighting Style|Paladin|XPHB|2",
+        "Paladin's Smite|Paladin|XPHB|2",
+        "Channel Divinity|Paladin|XPHB|3",
+        {
+          "classFeature": "Paladin Subclass|Paladin|XPHB|3",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Paladin|XPHB|4",
+        "Extra Attack|Paladin|XPHB|5",
+        "Faithful Steed|Paladin|XPHB|5",
+        "Aura of Protection|Paladin|XPHB|6",
+        {
+          "classFeature": "Subclass Feature|Paladin|XPHB|7",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Paladin|XPHB|8",
+        "Abjure Foes|Paladin|XPHB|9",
+        "Aura of Courage|Paladin|XPHB|10",
+        "Radiant Strikes|Paladin|XPHB|11",
+        "Ability Score Improvement|Paladin|XPHB|12",
+        "Restoring Touch|Paladin|XPHB|14",
+        {
+          "classFeature": "Subclass Feature|Paladin|XPHB|15",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Paladin|XPHB|16",
+        "Aura Expansion|Paladin|XPHB|18",
+        "Epic Boon|Paladin|XPHB|19",
+        {
+          "classFeature": "Subclass Feature|Paladin|XPHB|20",
+          "gainSubclassFeature": true
+        }
+      ],
+      "subclassTitle": "Paladin Subclass"
+    }
+  ],
+  "subclass": [
+    {
+      "name": "Oath of Devotion",
+      "shortName": "Devotion",
+      "source": "XPHB",
+      "className": "Paladin",
+      "classSource": "XPHB",
+      "srd52": true,
+      "basicRules2024": true,
+      "additionalSpells": [
+        {
+          "prepared": {
+            "3": [
+              "protection from evil and good|xphb",
+              "shield of faith|xphb"
+            ],
+            "5": [
+              "aid|xphb",
+              "zone of truth|xphb"
+            ],
+            "9": [
+              "beacon of hope|xphb",
+              "dispel magic|xphb"
+            ],
+            "13": [
+              "freedom of movement|xphb",
+              "guardian of faith|xphb"
+            ],
+            "17": [
+              "commune|xphb",
+              "flame strike|xphb"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Oath of Devotion|Paladin|XPHB|Devotion|XPHB|3",
+        "Aura of Devotion|Paladin|XPHB|Devotion|XPHB|7",
+        "Smite of Protection|Paladin|XPHB|Devotion|XPHB|15",
+        "Holy Nimbus|Paladin|XPHB|Devotion|XPHB|20"
+      ]
+    },
+    {
+      "name": "Oath of the Ancients",
+      "shortName": "Ancients",
+      "source": "XPHB",
+      "className": "Paladin",
+      "classSource": "XPHB",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "3": [
+              "ensnaring strike|xphb",
+              "speak with animals|xphb"
+            ],
+            "5": [
+              "misty step|xphb",
+              "moonbeam|xphb"
+            ],
+            "9": [
+              "plant growth|xphb",
+              "protection from energy|xphb"
+            ],
+            "13": [
+              "ice storm|xphb",
+              "stoneskin|xphb"
+            ],
+            "17": [
+              "commune with nature|xphb",
+              "tree stride|xphb"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Oath of the Ancients|Paladin|XPHB|Ancients|XPHB|3",
+        "Aura of Warding|Paladin|XPHB|Ancients|XPHB|7",
+        "Undying Sentinel|Paladin|XPHB|Ancients|XPHB|15",
+        "Elder Champion|Paladin|XPHB|Ancients|XPHB|20"
+      ]
+    },
+    {
+      "name": "Oath of Vengeance",
+      "shortName": "Vengeance",
+      "source": "XPHB",
+      "className": "Paladin",
+      "classSource": "XPHB",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "3": [
+              "bane|xphb",
+              "hunter's mark|xphb"
+            ],
+            "5": [
+              "hold person|xphb",
+              "misty step|xphb"
+            ],
+            "9": [
+              "haste|xphb",
+              "protection from energy|xphb"
+            ],
+            "13": [
+              "banishment|xphb",
+              "dimension door|xphb"
+            ],
+            "17": [
+              "hold monster|xphb",
+              "scrying|xphb"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Oath of Vengeance|Paladin|XPHB|Vengeance|XPHB|3",
+        "Relentless Avenger|Paladin|XPHB|Vengeance|XPHB|7",
+        "Soul of Vengeance|Paladin|XPHB|Vengeance|XPHB|15",
+        "Avenging Angel|Paladin|XPHB|Vengeance|XPHB|20"
+      ]
+    },
+    {
+      "name": "Oathbreaker",
+      "shortName": "Oathbreaker",
+      "source": "DMG",
+      "className": "Paladin",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "3": [
+              "hellish rebuke",
+              "inflict wounds"
+            ],
+            "5": [
+              "crown of madness",
+              "darkness"
+            ],
+            "9": [
+              "animate dead",
+              "bestow curse"
+            ],
+            "13": [
+              "blight",
+              "confusion"
+            ],
+            "17": [
+              "contagion",
+              "dominate person"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Oathbreaker|Paladin||Oathbreaker|DMG|3",
+        "Aura of Hate|Paladin||Oathbreaker|DMG|7",
+        "Supernatural Resistance|Paladin||Oathbreaker|DMG|15",
+        "Dread Lord|Paladin||Oathbreaker|DMG|20"
+      ]
+    },
+    {
+      "name": "Oath of the Crown",
+      "shortName": "Crown",
+      "source": "SCAG",
+      "className": "Paladin",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "3": [
+              "command",
+              "compelled duel"
+            ],
+            "5": [
+              "warding bond",
+              "zone of truth"
+            ],
+            "9": [
+              "aura of vitality",
+              "spirit guardians"
+            ],
+            "13": [
+              "banishment",
+              "guardian of faith"
+            ],
+            "17": [
+              "circle of power",
+              "geas"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Oath of the Crown|Paladin||Crown|SCAG|3",
+        "Divine Allegiance|Paladin||Crown|SCAG|7",
+        "Unyielding Spirit|Paladin||Crown|SCAG|15",
+        "Exalted Champion|Paladin||Crown|SCAG|20"
+      ]
+    },
+    {
+      "name": "Oath of Conquest",
+      "shortName": "Conquest",
+      "source": "XGE",
+      "className": "Paladin",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "3": [
+              "armor of Agathys",
+              "command"
+            ],
+            "5": [
+              "hold person",
+              "spiritual weapon"
+            ],
+            "9": [
+              "bestow curse",
+              "fear"
+            ],
+            "13": [
+              "dominate beast",
+              "stoneskin"
+            ],
+            "17": [
+              "cloudkill",
+              "dominate person"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Oath of Conquest|Paladin||Conquest|XGE|3",
+        "Aura of Conquest|Paladin||Conquest|XGE|7",
+        "Scornful Rebuke|Paladin||Conquest|XGE|15",
+        "Invincible Conqueror|Paladin||Conquest|XGE|20"
+      ]
+    },
+    {
+      "name": "Oath of Redemption",
+      "shortName": "Redemption",
+      "source": "XGE",
+      "className": "Paladin",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "3": [
+              "sanctuary",
+              "sleep"
+            ],
+            "5": [
+              "calm emotions",
+              "hold person"
+            ],
+            "9": [
+              "counterspell",
+              "hypnotic pattern"
+            ],
+            "13": [
+              "Otiluke's resilient sphere",
+              "stoneskin"
+            ],
+            "17": [
+              "hold monster",
+              "wall of force"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Oath of Redemption|Paladin||Redemption|XGE|3",
+        "Aura of the Guardian|Paladin||Redemption|XGE|7",
+        "Protective Spirit|Paladin||Redemption|XGE|15",
+        "Emissary of Redemption|Paladin||Redemption|XGE|20"
+      ]
+    },
+    {
+      "name": "Oath of Glory",
+      "shortName": "Glory",
+      "source": "XPHB",
+      "className": "Paladin",
+      "classSource": "XPHB",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "3": [
+              "guiding bolt|xphb",
+              "heroism|xphb"
+            ],
+            "5": [
+              "enhance ability|xphb",
+              "magic weapon|xphb"
+            ],
+            "9": [
+              "haste|xphb",
+              "protection from energy|xphb"
+            ],
+            "13": [
+              "compulsion|xphb",
+              "freedom of movement|xphb"
+            ],
+            "17": [
+              "legend lore|xphb",
+              "yolande's regal presence|xphb"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Oath of Glory|Paladin|XPHB|Glory|XPHB|3",
+        "Aura of Alacrity|Paladin|XPHB|Glory|XPHB|7",
+        "Glorious Defense|Paladin|XPHB|Glory|XPHB|15",
+        "Living Legend|Paladin|XPHB|Glory|XPHB|20"
+      ]
+    },
+    {
+      "name": "Oath of the Watchers",
+      "shortName": "Watchers",
+      "source": "TCE",
+      "className": "Paladin",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "3": [
+              "alarm",
+              "detect magic"
+            ],
+            "5": [
+              "moonbeam",
+              "see invisibility"
+            ],
+            "9": [
+              "counterspell",
+              "nondetection"
+            ],
+            "13": [
+              "aura of purity",
+              "banishment"
+            ],
+            "17": [
+              "hold monster",
+              "scrying"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Oath of the Watchers|Paladin||Watchers|TCE|3",
+        "Aura of the Sentinel|Paladin||Watchers|TCE|7",
+        "Vigilant Rebuke|Paladin||Watchers|TCE|15",
+        "Mortal Bulwark|Paladin||Watchers|TCE|20"
+      ]
+    },
+    {
+      "name": "Oath of the Open Sea",
+      "shortName": "Open Sea",
+      "source": "TDCSR",
+      "className": "Paladin",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "3": [
+              "create or destroy water",
+              "expeditious retreat"
+            ],
+            "5": [
+              "augury",
+              "misty step"
+            ],
+            "9": [
+              "call lightning",
+              "freedom of the waves|TDCSR"
+            ],
+            "13": [
+              "control water",
+              "freedom of movement"
+            ],
+            "17": [
+              "commune with nature",
+              "freedom of the winds|TDCSR"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Oath of the Open Sea|Paladin|PHB|Open Sea|TDCSR|3",
+        "Aura of Liberation|Paladin|PHB|Open Sea|TDCSR|7",
+        "Stormy Waters|Paladin|PHB|Open Sea|TDCSR|15",
+        "Aura of Liberation (18th Level)|Paladin|PHB|Open Sea|TDCSR|18",
+        "Mythic Swashbuckler|Paladin|PHB|Open Sea|TDCSR|20"
+      ]
+    }
+  ]
+}

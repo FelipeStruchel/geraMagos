@@ -1,0 +1,1002 @@
+{
+  "class": [
+    {
+      "name": "Wizard",
+      "source": "XPHB",
+      "srd52": true,
+      "basicRules2024": true,
+      "primaryAbility": [
+        {
+          "int": true
+        }
+      ],
+      "hd": {
+        "number": 1,
+        "faces": 6
+      },
+      "proficiency": [
+        "int",
+        "wis"
+      ],
+      "spellcastingAbility": "int",
+      "casterProgression": "full",
+      "preparedSpellsProgression": [
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        16,
+        16,
+        17,
+        18,
+        19,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "preparedSpellsChange": "restLong",
+      "cantripProgression": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "spellsKnownProgressionFixed": [
+        6,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "spellsKnownProgressionFixedAllowLowerLevel": true,
+      "featProgression": [
+        {
+          "name": "Epic Boon",
+          "category": [
+            "EB"
+          ],
+          "progression": {
+            "19": 1
+          }
+        }
+      ],
+      "startingProficiencies": {
+        "weapons": [
+          "simple"
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "arcana",
+                "history",
+                "insight",
+                "investigation",
+                "medicine",
+                "religion"
+              ],
+              "count": 2
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "defaultData": [
+          {
+            "A": [
+              {
+                "item": "dagger|xphb",
+                "quantity": 2
+              },
+              {
+                "item": "quarterstaff|xphb"
+              },
+              {
+                "item": "robe|xphb"
+              },
+              {
+                "special": "Spellbook"
+              },
+              {
+                "item": "scholar's pack|xphb"
+              },
+              {
+                "value": 500
+              }
+            ],
+            "B": [
+              {
+                "value": 5500
+              }
+            ]
+          }
+        ],
+        "entries": [
+          "{@i Choose A or B:} (A) 2 {@item Dagger|XPHB|Daggers}, {@item Arcane Focus|XPHB} ({@item Quarterstaff|XPHB}), {@item Robe|XPHB}, Spellbook, {@item Scholar's Pack|XPHB}, and 5 GP; or (B) 55 GP"
+        ]
+      },
+      "multiclassing": {},
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "{@filter Cantrips|spells|level=0|class=Wizard}",
+            "{@filter Prepared Spells|spells|level=!0|class=Wizard}"
+          ],
+          "rows": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              4,
+              7
+            ],
+            [
+              4,
+              9
+            ],
+            [
+              4,
+              10
+            ],
+            [
+              4,
+              11
+            ],
+            [
+              4,
+              12
+            ],
+            [
+              4,
+              14
+            ],
+            [
+              5,
+              15
+            ],
+            [
+              5,
+              16
+            ],
+            [
+              5,
+              16
+            ],
+            [
+              5,
+              17
+            ],
+            [
+              5,
+              18
+            ],
+            [
+              5,
+              19
+            ],
+            [
+              5,
+              21
+            ],
+            [
+              5,
+              22
+            ],
+            [
+              5,
+              23
+            ],
+            [
+              5,
+              24
+            ],
+            [
+              5,
+              25
+            ]
+          ]
+        },
+        {
+          "title": "Spell Slots per Spell Level",
+          "colLabels": [
+            "{@filter 1st|spells|level=1|class=Wizard}",
+            "{@filter 2nd|spells|level=2|class=Wizard}",
+            "{@filter 3rd|spells|level=3|class=Wizard}",
+            "{@filter 4th|spells|level=4|class=Wizard}",
+            "{@filter 5th|spells|level=5|class=Wizard}",
+            "{@filter 6th|spells|level=6|class=Wizard}",
+            "{@filter 7th|spells|level=7|class=Wizard}",
+            "{@filter 8th|spells|level=8|class=Wizard}",
+            "{@filter 9th|spells|level=9|class=Wizard}"
+          ],
+          "rowsSpellProgression": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              2,
+              2,
+              1,
+              1
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "Spellcasting|Wizard|XPHB|1",
+        "Ritual Adept|Wizard|XPHB|1",
+        "Arcane Recovery|Wizard|XPHB|1",
+        "Scholar|Wizard|XPHB|2",
+        {
+          "classFeature": "Wizard Subclass|Wizard|XPHB|3",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Wizard|XPHB|4",
+        "Memorize Spell|Wizard|XPHB|5",
+        {
+          "classFeature": "Subclass Feature|Wizard|XPHB|6",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Wizard|XPHB|8",
+        {
+          "classFeature": "Subclass Feature|Wizard|XPHB|10",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Wizard|XPHB|12",
+        {
+          "classFeature": "Subclass Feature|Wizard|XPHB|14",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Wizard|XPHB|16",
+        "Spell Mastery|Wizard|XPHB|18",
+        "Epic Boon|Wizard|XPHB|19",
+        "Signature Spells|Wizard|XPHB|20"
+      ],
+      "subclassTitle": "Wizard Subclass"
+    }
+  ],
+  "subclass": [
+    {
+      "name": "School of Abjuration",
+      "shortName": "Abjuration",
+      "source": "PHB",
+      "className": "Wizard",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "School of Abjuration|Wizard||Abjuration||2",
+        "Projected Ward|Wizard||Abjuration||6",
+        "Improved Abjuration|Wizard||Abjuration||10",
+        "Spell Resistance|Wizard||Abjuration||14"
+      ]
+    },
+    {
+      "name": "School of Conjuration",
+      "shortName": "Conjuration",
+      "source": "PHB",
+      "className": "Wizard",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "School of Conjuration|Wizard||Conjuration||2",
+        "Benign Transposition|Wizard||Conjuration||6",
+        "Focused Conjuration|Wizard||Conjuration||10",
+        "Durable Summons|Wizard||Conjuration||14"
+      ]
+    },
+    {
+      "name": "School of Divination",
+      "shortName": "Divination",
+      "source": "PHB",
+      "className": "Wizard",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "School of Divination|Wizard||Divination||2",
+        "Expert Divination|Wizard||Divination||6",
+        "The Third Eye|Wizard||Divination||10",
+        "Greater Portent|Wizard||Divination||14"
+      ]
+    },
+    {
+      "name": "School of Enchantment",
+      "shortName": "Enchantment",
+      "source": "PHB",
+      "className": "Wizard",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "School of Enchantment|Wizard||Enchantment||2",
+        "Instinctive Charm|Wizard||Enchantment||6",
+        "Split Enchantment|Wizard||Enchantment||10",
+        "Alter Memories|Wizard||Enchantment||14"
+      ]
+    },
+    {
+      "name": "School of Evocation",
+      "shortName": "Evocation",
+      "source": "PHB",
+      "className": "Wizard",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "School of Evocation|Wizard||Evocation||2",
+        "Potent Cantrip|Wizard||Evocation||6",
+        "Empowered Evocation|Wizard||Evocation||10",
+        "Overchannel|Wizard||Evocation||14"
+      ]
+    },
+    {
+      "name": "School of Illusion",
+      "shortName": "Illusion",
+      "source": "PHB",
+      "className": "Wizard",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "known": {
+            "1": [
+              "minor illusion#c"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "School of Illusion|Wizard||Illusion||2",
+        "Malleable Illusions|Wizard||Illusion||6",
+        "Illusory Self|Wizard||Illusion||10",
+        "Illusory Reality|Wizard||Illusion||14"
+      ]
+    },
+    {
+      "name": "School of Necromancy",
+      "shortName": "Necromancy",
+      "source": "PHB",
+      "className": "Wizard",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "School of Necromancy|Wizard||Necromancy||2",
+        "Undead Thralls|Wizard||Necromancy||6",
+        "Inured to Undeath|Wizard||Necromancy||10",
+        "Command Undead|Wizard||Necromancy||14"
+      ]
+    },
+    {
+      "name": "School of Transmutation",
+      "shortName": "Transmutation",
+      "source": "PHB",
+      "className": "Wizard",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "School of Transmutation|Wizard||Transmutation||2",
+        "Transmuter's Stone|Wizard||Transmutation||6",
+        "Shapechanger|Wizard||Transmutation||10",
+        "Master Transmuter|Wizard||Transmutation||14"
+      ]
+    },
+    {
+      "name": "War Magic",
+      "shortName": "War",
+      "source": "XGE",
+      "className": "Wizard",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "War Magic|Wizard||War|XGE|2",
+        "Power Surge|Wizard||War|XGE|6",
+        "Durable Magic|Wizard||War|XGE|10",
+        "Deflecting Shroud|Wizard||War|XGE|14"
+      ]
+    },
+    {
+      "name": "Chronurgy Magic",
+      "shortName": "Chronurgy",
+      "source": "EGW",
+      "className": "Wizard",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "expanded": {
+            "1": [
+              {
+                "all": "source=EGW"
+              }
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Chronurgy Magic|Wizard||Chronurgy|EGW|2",
+        "Momentary Stasis|Wizard||Chronurgy|EGW|6",
+        "Arcane Abeyance|Wizard||Chronurgy|EGW|10",
+        "Convergent Future|Wizard||Chronurgy|EGW|14"
+      ]
+    },
+    {
+      "name": "Graviturgy Magic",
+      "shortName": "Graviturgy",
+      "source": "EGW",
+      "className": "Wizard",
+      "classSource": "PHB",
+      "additionalSpells": [
+        {
+          "expanded": {
+            "1": [
+              {
+                "all": "source=EGW"
+              }
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Graviturgy Magic|Wizard||Graviturgy|EGW|2",
+        "Gravity Well|Wizard||Graviturgy|EGW|6",
+        "Violent Attraction|Wizard||Graviturgy|EGW|10",
+        "Event Horizon|Wizard||Graviturgy|EGW|14"
+      ]
+    },
+    {
+      "name": "Bladesinging",
+      "shortName": "Bladesinging",
+      "source": "TCE",
+      "className": "Wizard",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Bladesinging|Wizard||Bladesinging|TCE|2",
+        "Extra Attack|Wizard||Bladesinging|TCE|6",
+        "Song of Defense|Wizard||Bladesinging|TCE|10",
+        "Song of Victory|Wizard||Bladesinging|TCE|14"
+      ]
+    },
+    {
+      "name": "Order of Scribes",
+      "shortName": "Scribes",
+      "source": "TCE",
+      "className": "Wizard",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Order of Scribes|Wizard||Scribes|TCE|2",
+        "Manifest Mind|Wizard||Scribes|TCE|6",
+        "Master Scrivener|Wizard||Scribes|TCE|10",
+        "One with the Word|Wizard||Scribes|TCE|14"
+      ]
+    },
+    {
+      "name": "Blood Magic",
+      "shortName": "Blood Magic",
+      "source": "TDCSR",
+      "className": "Wizard",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Blood Magic|Wizard|PHB|Blood Magic|TDCSR|2",
+        "Bond of Mutual Suffering|Wizard|PHB|Blood Magic|TDCSR|6",
+        "Glyph of Hemorrhaging|Wizard|PHB|Blood Magic|TDCSR|10",
+        "Bond of Mutual Suffering (14th Level)|Wizard|PHB|Blood Magic|TDCSR|14",
+        "Thicker than Water|Wizard|PHB|Blood Magic|TDCSR|14"
+      ]
+    },
+    {
+      "name": "Abjurer",
+      "shortName": "Abjurer",
+      "source": "XPHB",
+      "className": "Wizard",
+      "classSource": "XPHB",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "10": [
+              "counterspell|xphb",
+              "dispel magic|xphb"
+            ]
+          },
+          "known": {
+            "3": [
+              {
+                "choose": "level=0;1;2|class=Wizard|school=A"
+              },
+              {
+                "choose": "level=0;1;2|class=Wizard|school=A"
+              }
+            ],
+            "5": [
+              {
+                "choose": "level=0;1;2;3|class=Wizard|school=A"
+              }
+            ],
+            "7": [
+              {
+                "choose": "level=0;1;2;3;4|class=Wizard|school=A"
+              }
+            ],
+            "9": [
+              {
+                "choose": "level=0;1;2;3;4;5|class=Wizard|school=A"
+              }
+            ],
+            "11": [
+              {
+                "choose": "level=0;1;2;3;4;5;6|class=Wizard|school=A"
+              }
+            ],
+            "13": [
+              {
+                "choose": "level=0;1;2;3;4;5;6;7|class=Wizard|school=A"
+              }
+            ],
+            "15": [
+              {
+                "choose": "level=0;1;2;3;4;5;6;7;8|class=Wizard|school=A"
+              }
+            ],
+            "17": [
+              {
+                "choose": "level=0;1;2;3;4;5;6;7;8;9|class=Wizard|school=A"
+              }
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Abjurer|Wizard|XPHB|Abjurer|XPHB|3",
+        "Projected Ward|Wizard|XPHB|Abjurer|XPHB|6",
+        "Spell Breaker|Wizard|XPHB|Abjurer|XPHB|10",
+        "Spell Resistance|Wizard|XPHB|Abjurer|XPHB|14"
+      ]
+    },
+    {
+      "name": "Diviner",
+      "shortName": "Diviner",
+      "source": "XPHB",
+      "className": "Wizard",
+      "classSource": "XPHB",
+      "additionalSpells": [
+        {
+          "innate": {
+            "10": [
+              "see invisibility|xphb"
+            ]
+          },
+          "known": {
+            "3": [
+              {
+                "choose": "level=0;1;2|class=Wizard|school=D"
+              },
+              {
+                "choose": "level=0;1;2|class=Wizard|school=D"
+              }
+            ],
+            "5": [
+              {
+                "choose": "level=0;1;2;3|class=Wizard|school=D"
+              }
+            ],
+            "7": [
+              {
+                "choose": "level=0;1;2;3;4|class=Wizard|school=D"
+              }
+            ],
+            "9": [
+              {
+                "choose": "level=0;1;2;3;4;5|class=Wizard|school=D"
+              }
+            ],
+            "11": [
+              {
+                "choose": "level=0;1;2;3;4;5;6|class=Wizard|school=D"
+              }
+            ],
+            "13": [
+              {
+                "choose": "level=0;1;2;3;4;5;6;7|class=Wizard|school=D"
+              }
+            ],
+            "15": [
+              {
+                "choose": "level=0;1;2;3;4;5;6;7;8|class=Wizard|school=D"
+              }
+            ],
+            "17": [
+              {
+                "choose": "level=0;1;2;3;4;5;6;7;8;9|class=Wizard|school=D"
+              }
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Diviner|Wizard|XPHB|Diviner|XPHB|3",
+        "Expert Divination|Wizard|XPHB|Diviner|XPHB|6",
+        "The Third Eye|Wizard|XPHB|Diviner|XPHB|10",
+        "Greater Portent|Wizard|XPHB|Diviner|XPHB|14"
+      ]
+    },
+    {
+      "name": "Evoker",
+      "shortName": "Evoker",
+      "source": "XPHB",
+      "className": "Wizard",
+      "classSource": "XPHB",
+      "srd52": true,
+      "basicRules2024": true,
+      "additionalSpells": [
+        {
+          "known": {
+            "3": [
+              {
+                "choose": "level=0;1;2|class=Wizard|school=V"
+              },
+              {
+                "choose": "level=0;1;2|class=Wizard|school=V"
+              }
+            ],
+            "5": [
+              {
+                "choose": "level=0;1;2;3|class=Wizard|school=V"
+              }
+            ],
+            "7": [
+              {
+                "choose": "level=0;1;2;3;4|class=Wizard|school=V"
+              }
+            ],
+            "9": [
+              {
+                "choose": "level=0;1;2;3;4;5|class=Wizard|school=V"
+              }
+            ],
+            "11": [
+              {
+                "choose": "level=0;1;2;3;4;5;6|class=Wizard|school=V"
+              }
+            ],
+            "13": [
+              {
+                "choose": "level=0;1;2;3;4;5;6;7|class=Wizard|school=V"
+              }
+            ],
+            "15": [
+              {
+                "choose": "level=0;1;2;3;4;5;6;7;8|class=Wizard|school=V"
+              }
+            ],
+            "17": [
+              {
+                "choose": "level=0;1;2;3;4;5;6;7;8;9|class=Wizard|school=V"
+              }
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Evoker|Wizard|XPHB|Evoker|XPHB|3",
+        "Sculpt Spells|Wizard|XPHB|Evoker|XPHB|6",
+        "Empowered Evocation|Wizard|XPHB|Evoker|XPHB|10",
+        "Overchannel|Wizard|XPHB|Evoker|XPHB|14"
+      ]
+    },
+    {
+      "name": "Illusionist",
+      "shortName": "Illusionist",
+      "source": "XPHB",
+      "className": "Wizard",
+      "classSource": "XPHB",
+      "additionalSpells": [
+        {
+          "known": {
+            "3": [
+              "minor illusion|xphb#c",
+              {
+                "choose": "level=0;1;2|class=Wizard|school=I"
+              },
+              {
+                "choose": "level=0;1;2|class=Wizard|school=I"
+              }
+            ],
+            "5": [
+              {
+                "choose": "level=0;1;2;3|class=Wizard|school=I"
+              }
+            ],
+            "7": [
+              {
+                "choose": "level=0;1;2;3;4|class=Wizard|school=I"
+              }
+            ],
+            "9": [
+              {
+                "choose": "level=0;1;2;3;4;5|class=Wizard|school=I"
+              }
+            ],
+            "11": [
+              {
+                "choose": "level=0;1;2;3;4;5;6|class=Wizard|school=I"
+              }
+            ],
+            "13": [
+              {
+                "choose": "level=0;1;2;3;4;5;6;7|class=Wizard|school=I"
+              }
+            ],
+            "15": [
+              {
+                "choose": "level=0;1;2;3;4;5;6;7;8|class=Wizard|school=I"
+              }
+            ],
+            "17": [
+              {
+                "choose": "level=0;1;2;3;4;5;6;7;8;9|class=Wizard|school=I"
+              }
+            ]
+          },
+          "prepared": {
+            "6": [
+              "summon beast|xphb",
+              "summon fey|xphb"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Illusionist|Wizard|XPHB|Illusionist|XPHB|3",
+        "Phantasmal Creatures|Wizard|XPHB|Illusionist|XPHB|6",
+        "Illusory Self|Wizard|XPHB|Illusionist|XPHB|10",
+        "Illusory Reality|Wizard|XPHB|Illusionist|XPHB|14"
+      ]
+    }
+  ]
+}
